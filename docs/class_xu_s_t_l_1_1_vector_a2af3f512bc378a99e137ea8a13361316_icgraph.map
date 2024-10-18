@@ -1,0 +1,16 @@
+<map id="XuSTL::Vector::reserve" name="XuSTL::Vector::reserve">
+<area shape="rect" id="Node000001" title="预留容量。" alt="" coords="683,80,851,105"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="477,31,633,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="698,79,609,59,611,53,699,74"/>
+<area shape="rect" id="Node000006" href="$class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e" title="调整大小，增加或减少元素数量。" alt="" coords="475,80,634,105"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="669,95,634,95,634,90,669,90"/>
+<area shape="rect" id="Node000007" href="$class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db" title="默认构造函数，初始化容量为10。" alt="" coords="475,129,635,155"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="699,111,611,132,609,127,698,106"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,5,427,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="463,36,427,31,427,26,464,30"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,55,142,80"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="463,51,143,68,142,62,463,45"/>
+<area shape="rect" id="Node000004" href="$class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="259,36,143,61,141,56,258,31"/>
+</map>

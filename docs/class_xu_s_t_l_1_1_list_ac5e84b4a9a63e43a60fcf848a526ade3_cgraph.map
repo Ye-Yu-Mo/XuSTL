@@ -1,0 +1,7 @@
+<map id="XuSTL::List::front" name="XuSTL::List::front">
+<area shape="rect" id="Node000001" title="获取链表的第一个元素" alt="" coords="5,5,137,31"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_list.html#a8a7063d6c0f56bf9e8998fa3ef8ca33c" title="获取链表的第一个元素" alt="" coords="185,5,317,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,15,171,15,171,21,138,21"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_list.html#a3034f40fd6a8fb920615c3d25f09dd91" title="检查链表是否为空" alt="" coords="365,5,508,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,15,351,15,351,21,318,21"/>
+</map>

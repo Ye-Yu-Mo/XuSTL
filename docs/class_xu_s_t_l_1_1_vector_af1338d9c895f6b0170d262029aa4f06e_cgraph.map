@@ -1,0 +1,11 @@
+<map id="XuSTL::Vector::resize" name="XuSTL::Vector::resize">
+<area shape="rect" id="Node000001" title="调整大小，增加或减少元素数量。" alt="" coords="5,29,164,55"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="428,5,603,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,27,212,14,316,9,414,10,414,15,316,14,212,19,138,32"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="212,29,380,55"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,39,198,39,198,45,164,45"/>
+<area shape="rect" id="Node000004" href="$class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="443,55,588,80"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="138,52,212,65,325,70,429,69,429,74,325,76,212,70,137,57"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="380,30,414,26,415,32,381,35"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="381,49,429,55,428,60,380,54"/>
+</map>

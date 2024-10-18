@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XuSTL: include/adapter/ConstReverseIterator.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">XuSTL<span id="projectnumber">&#160;beta 0.1</span>
+   </div>
+   <div id="projectbrief">Simulate the implementation of STL library</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_const_reverse_iterator_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ConstReverseIterator.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_const_reverse_iterator_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_const_iterator_8hpp.html">ConstIterator.hpp</a>&quot;</span>  <span class="comment">// 引入ConstIterator的头文件</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_xu_s_t_l.html">XuSTL</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">template</span> &lt;<span class="keyword">class </span>Iterator,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>              <span class="keyword">class </span>Ref = <span class="keyword">typename</span> std::iterator_traits&lt;Iterator&gt;::reference,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>              <span class="keyword">class </span>Ptr = <span class="keyword">typename</span> std::iterator_traits&lt;Iterator&gt;::pointer&gt;</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">   15</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">ConstReverseIterator</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ab69ca67e376ca688557a9c1983d389fa">   18</a></span>        <span class="keyword">using </span><a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> = <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">ConstReverseIterator&lt;Iterator, Ref, Ptr&gt;</a>; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a9b3b4b6b663b98739e56a5c38da34616">   21</a></span>        <span class="keyword">explicit</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a9b3b4b6b663b98739e56a5c38da34616">ConstReverseIterator</a>(Iterator it) : <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>(it) {}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a3422966237e63023defda880236c9c25">   23</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a3422966237e63023defda880236c9c25">ConstReverseIterator</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;other) : <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>(other.<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>) {}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a407ecbb0ff731f4d1bc581f50d837ac9">   25</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a407ecbb0ff731f4d1bc581f50d837ac9">ConstReverseIterator</a>(<a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">ConstReverseIterator</a> &amp;&amp;other) noexcept : <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>(other._it) {}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a2e8645c2cac4e1afb1a8bd5fd8c80edc">   28</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a2e8645c2cac4e1afb1a8bd5fd8c80edc">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;other)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a> = other.<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ae14103c6f3e3f90a0c63e4e090e353d9">   38</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ae14103c6f3e3f90a0c63e4e090e353d9">operator=</a>(<a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;&amp;other) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a> = other.<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ab884de0eaf1bda7d98abbd79a352031e">   49</a></span>        Ref <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ab884de0eaf1bda7d98abbd79a352031e">operator*</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            Iterator tmp = <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>; <span class="comment">// 使用临时变量</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">return</span> *(--tmp);    <span class="comment">// 返回前一个元素的常量引用</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a4bbae6636fd95ccfcb114094754c2514">   55</a></span>        Ptr <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a4bbae6636fd95ccfcb114094754c2514">operator-&gt;</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            Iterator tmp = <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>; <span class="comment">// 使用临时变量</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            --tmp;              <span class="comment">// 返回前一个元素的指针</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a1b53c619173b5cb7ce1c4d0272332850">   63</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a1b53c619173b5cb7ce1c4d0272332850">operator++</a>()</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            --<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#af69011742b88e1918bf54dead3d61ac9">   71</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#af69011742b88e1918bf54dead3d61ac9">operator++</a>(<span class="keywordtype">int</span>)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> tmp = *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            --<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ab768bdce66f88d377b43fd45309bc0e2">   80</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ab768bdce66f88d377b43fd45309bc0e2">operator--</a>()</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            ++<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a012145c34022ca5ae18f2d982e9c69c2">   88</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a012145c34022ca5ae18f2d982e9c69c2">operator--</a>(<span class="keywordtype">int</span>)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> tmp = *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            ++<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a87302fbbe5b3307a3efe696d0e0a93b4">   98</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a87302fbbe5b3307a3efe696d0e0a93b4">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a> == other.<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a52d17725806f19c7572be0653510b17d">  103</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a52d17725806f19c7572be0653510b17d">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">Self</a> &amp;other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a> != other.<a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>; }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">  106</a></span>        Iterator <a class="code hl_variable" href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">_it</a>; </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    };</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="ttc" id="a_const_iterator_8hpp_html"><div class="ttname"><a href="_const_iterator_8hpp.html">ConstIterator.hpp</a></div><div class="ttdoc">Const迭代器适配器</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html">XuSTL::ConstReverseIterator</a></div><div class="ttdoc">Const反向迭代器类</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:16</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a012145c34022ca5ae18f2d982e9c69c2"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a012145c34022ca5ae18f2d982e9c69c2">XuSTL::ConstReverseIterator::operator--</a></div><div class="ttdeci">Self operator--(int)</div><div class="ttdoc">Const反向迭代器 后置–</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:88</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a1b53c619173b5cb7ce1c4d0272332850"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a1b53c619173b5cb7ce1c4d0272332850">XuSTL::ConstReverseIterator::operator++</a></div><div class="ttdeci">Self &amp; operator++()</div><div class="ttdoc">Const反向迭代器 前置++</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:63</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a2e8645c2cac4e1afb1a8bd5fd8c80edc"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a2e8645c2cac4e1afb1a8bd5fd8c80edc">XuSTL::ConstReverseIterator::operator=</a></div><div class="ttdeci">Self &amp; operator=(const Self &amp;other)</div><div class="ttdoc">赋值运算符</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:28</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a3422966237e63023defda880236c9c25"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a3422966237e63023defda880236c9c25">XuSTL::ConstReverseIterator::ConstReverseIterator</a></div><div class="ttdeci">ConstReverseIterator(const Self &amp;other)</div><div class="ttdoc">拷贝构造函数</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:23</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a407ecbb0ff731f4d1bc581f50d837ac9"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a407ecbb0ff731f4d1bc581f50d837ac9">XuSTL::ConstReverseIterator::ConstReverseIterator</a></div><div class="ttdeci">ConstReverseIterator(ConstReverseIterator &amp;&amp;other) noexcept</div><div class="ttdoc">移动构造函数</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:25</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a4bbae6636fd95ccfcb114094754c2514"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a4bbae6636fd95ccfcb114094754c2514">XuSTL::ConstReverseIterator::operator-&gt;</a></div><div class="ttdeci">Ptr operator-&gt;() const</div><div class="ttdoc">operator-&gt; 实现</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:55</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a52d17725806f19c7572be0653510b17d"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a52d17725806f19c7572be0653510b17d">XuSTL::ConstReverseIterator::operator!=</a></div><div class="ttdeci">bool operator!=(const Self &amp;other) const</div><div class="ttdoc">判断迭代器是否不相等</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:103</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a87302fbbe5b3307a3efe696d0e0a93b4"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a87302fbbe5b3307a3efe696d0e0a93b4">XuSTL::ConstReverseIterator::operator==</a></div><div class="ttdeci">bool operator==(const Self &amp;other) const</div><div class="ttdoc">判断迭代器是否相等</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:98</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_a9b3b4b6b663b98739e56a5c38da34616"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#a9b3b4b6b663b98739e56a5c38da34616">XuSTL::ConstReverseIterator::ConstReverseIterator</a></div><div class="ttdeci">ConstReverseIterator(Iterator it)</div><div class="ttdoc">构造函数 禁止隐式类型转换</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:21</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_ab768bdce66f88d377b43fd45309bc0e2"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ab768bdce66f88d377b43fd45309bc0e2">XuSTL::ConstReverseIterator::operator--</a></div><div class="ttdeci">Self &amp; operator--()</div><div class="ttdoc">Const反向迭代器 前置–</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:80</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_ab884de0eaf1bda7d98abbd79a352031e"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ab884de0eaf1bda7d98abbd79a352031e">XuSTL::ConstReverseIterator::operator*</a></div><div class="ttdeci">Ref operator*() const</div><div class="ttdoc">获取迭代器内容</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:49</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_ace0c1f9db1a8d10763e626bfe43f63fc"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ace0c1f9db1a8d10763e626bfe43f63fc">XuSTL::ConstReverseIterator::_it</a></div><div class="ttdeci">Iterator _it</div><div class="ttdoc">正向迭代器</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:106</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_ae14103c6f3e3f90a0c63e4e090e353d9"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#ae14103c6f3e3f90a0c63e4e090e353d9">XuSTL::ConstReverseIterator::operator=</a></div><div class="ttdeci">Self &amp; operator=(Self &amp;&amp;other) noexcept</div><div class="ttdoc">移动赋值运算符</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:38</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html_af69011742b88e1918bf54dead3d61ac9"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html#af69011742b88e1918bf54dead3d61ac9">XuSTL::ConstReverseIterator::operator++</a></div><div class="ttdeci">Self operator++(int)</div><div class="ttdoc">Const反向迭代器 后置++</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:71</div></div>
+<div class="ttc" id="anamespace_xu_s_t_l_html"><div class="ttname"><a href="namespace_xu_s_t_l.html">XuSTL</a></div><div class="ttdef"><b>Definition</b> ConstIterator.hpp:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e02251822bb6945e4b99c9ebbe9f01ff.html">adapter</a></li><li class="navelem"><a class="el" href="_const_reverse_iterator_8hpp.html">ConstReverseIterator.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

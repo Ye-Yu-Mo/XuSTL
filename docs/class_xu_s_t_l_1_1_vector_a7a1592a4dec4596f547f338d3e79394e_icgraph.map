@@ -1,0 +1,21 @@
+<map id="XuSTL::Vector::capacity" name="XuSTL::Vector::capacity">
+<area shape="rect" id="Node000001" title="返回当前容量。" alt="" coords="899,132,1073,157"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="477,56,633,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="939,130,850,103,737,85,633,75,633,70,737,80,851,98,940,125"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,56,142,81"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="885,139,142,75,143,70,885,133"/>
+<area shape="rect" id="Node000006" href="$class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="683,157,851,183"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="885,159,851,163,850,158,885,154"/>
+<area shape="rect" id="Node000007" href="$class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e" title="调整大小，增加或减少元素数量。" alt="" coords="475,207,634,232"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="946,165,901,183,851,198,738,215,635,222,634,216,738,210,850,193,900,178,944,160"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,5,427,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="484,55,388,33,390,28,485,50"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="463,71,142,71,142,66,463,66"/>
+<area shape="rect" id="Node000004" href="$class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="260,36,143,62,142,57,259,31"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="725,154,581,84,583,79,728,149"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="699,188,611,209,609,204,698,183"/>
+<area shape="rect" id="Node000008" href="$class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db" title="默认构造函数，初始化容量为10。" alt="" coords="475,157,635,183"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="669,173,635,173,635,167,669,167"/>
+</map>

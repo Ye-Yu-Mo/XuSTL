@@ -1,0 +1,7 @@
+<map id="XuSTL::Vector::reserve" name="XuSTL::Vector::reserve">
+<area shape="rect" id="Node000001" title="预留容量。" alt="" coords="5,31,173,56"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="221,5,396,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,31,208,27,208,32,174,36"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="236,55,381,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,50,222,55,222,61,174,55"/>
+</map>

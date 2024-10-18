@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XuSTL: XuSTL::ReverseIterator&lt; Iterator, Ref, Ptr &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">XuSTL<span id="projectnumber">&#160;beta 0.1</span>
+   </div>
+   <div id="projectbrief">Simulate the implementation of STL library</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_xu_s_t_l_1_1_reverse_iterator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_xu_s_t_l_1_1_reverse_iterator-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">XuSTL::ReverseIterator&lt; Iterator, Ref, Ptr &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>反向迭代器类  
+ <a href="class_xu_s_t_l_1_1_reverse_iterator.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_reverse_iterator_8hpp_source.html">ReverseIterator.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a11c43b4c6f58ec9b7e00087ae3ceee84" id="r_a11c43b4c6f58ec9b7e00087ae3ceee84"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> = <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;</td></tr>
+<tr class="memdesc:a11c43b4c6f58ec9b7e00087ae3ceee84"><td class="mdescLeft">&#160;</td><td class="mdescRight">简化  <br /></td></tr>
+<tr class="separator:a11c43b4c6f58ec9b7e00087ae3ceee84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac29f0adad9c4789705e670f8387dcfbf" id="r_ac29f0adad9c4789705e670f8387dcfbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#ac29f0adad9c4789705e670f8387dcfbf">ReverseIterator</a> (Iterator it)</td></tr>
+<tr class="memdesc:ac29f0adad9c4789705e670f8387dcfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数 禁止隐式类型转换  <br /></td></tr>
+<tr class="separator:ac29f0adad9c4789705e670f8387dcfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6561c0fe326c23c2e5c19fa0a21d05c9" id="r_a6561c0fe326c23c2e5c19fa0a21d05c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a6561c0fe326c23c2e5c19fa0a21d05c9">ReverseIterator</a> (const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;other)</td></tr>
+<tr class="memdesc:a6561c0fe326c23c2e5c19fa0a21d05c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝构造函数  <br /></td></tr>
+<tr class="separator:a6561c0fe326c23c2e5c19fa0a21d05c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49881303984316c03d53f9a79914a6dc" id="r_a49881303984316c03d53f9a79914a6dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a49881303984316c03d53f9a79914a6dc">ReverseIterator</a> (<a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a49881303984316c03d53f9a79914a6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动构造函数  <br /></td></tr>
+<tr class="separator:a49881303984316c03d53f9a79914a6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303cbb4e96930813427645afca3b2c7e" id="r_a303cbb4e96930813427645afca3b2c7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a303cbb4e96930813427645afca3b2c7e">operator=</a> (const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;other)</td></tr>
+<tr class="memdesc:a303cbb4e96930813427645afca3b2c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">赋值运算符  <br /></td></tr>
+<tr class="separator:a303cbb4e96930813427645afca3b2c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd41969e92c1840b3b9ac9c0bf8dd9fc" id="r_abd41969e92c1840b3b9ac9c0bf8dd9fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#abd41969e92c1840b3b9ac9c0bf8dd9fc">operator=</a> (<a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:abd41969e92c1840b3b9ac9c0bf8dd9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动赋值运算符  <br /></td></tr>
+<tr class="separator:abd41969e92c1840b3b9ac9c0bf8dd9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20dad71d0ea1a01abc84eef4feefff64" id="r_a20dad71d0ea1a01abc84eef4feefff64"><td class="memItemLeft" align="right" valign="top">Ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a20dad71d0ea1a01abc84eef4feefff64">operator*</a> () const</td></tr>
+<tr class="memdesc:a20dad71d0ea1a01abc84eef4feefff64"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取迭代器内容  <br /></td></tr>
+<tr class="separator:a20dad71d0ea1a01abc84eef4feefff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2419fe38f69a74e7c6d8e99472c3b74" id="r_ac2419fe38f69a74e7c6d8e99472c3b74"><td class="memItemLeft" align="right" valign="top">Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#ac2419fe38f69a74e7c6d8e99472c3b74">operator-&gt;</a> ()</td></tr>
+<tr class="memdesc:ac2419fe38f69a74e7c6d8e99472c3b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator-&gt; 实现  <br /></td></tr>
+<tr class="separator:ac2419fe38f69a74e7c6d8e99472c3b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45f74db2f47c5097ec6db741cd60f2e" id="r_ae45f74db2f47c5097ec6db741cd60f2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#ae45f74db2f47c5097ec6db741cd60f2e">operator++</a> ()</td></tr>
+<tr class="memdesc:ae45f74db2f47c5097ec6db741cd60f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">反向迭代器 前置++  <br /></td></tr>
+<tr class="separator:ae45f74db2f47c5097ec6db741cd60f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86cd26dff4d0044ed574595ee1b7f22" id="r_aa86cd26dff4d0044ed574595ee1b7f22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#aa86cd26dff4d0044ed574595ee1b7f22">operator++</a> (int)</td></tr>
+<tr class="memdesc:aa86cd26dff4d0044ed574595ee1b7f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">反向迭代器 后置++  <br /></td></tr>
+<tr class="separator:aa86cd26dff4d0044ed574595ee1b7f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae87a8e11ff9bba41523912dbed307de" id="r_aae87a8e11ff9bba41523912dbed307de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#aae87a8e11ff9bba41523912dbed307de">operator--</a> ()</td></tr>
+<tr class="memdesc:aae87a8e11ff9bba41523912dbed307de"><td class="mdescLeft">&#160;</td><td class="mdescRight">反向迭代器 前置&ndash;  <br /></td></tr>
+<tr class="separator:aae87a8e11ff9bba41523912dbed307de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88205b241ef0dea4c118d1f2af68b427" id="r_a88205b241ef0dea4c118d1f2af68b427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a88205b241ef0dea4c118d1f2af68b427">operator--</a> (int)</td></tr>
+<tr class="memdesc:a88205b241ef0dea4c118d1f2af68b427"><td class="mdescLeft">&#160;</td><td class="mdescRight">反向迭代器 后置&ndash;  <br /></td></tr>
+<tr class="separator:a88205b241ef0dea4c118d1f2af68b427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75968aa8d9cd86e3de16b67239fda56" id="r_ac75968aa8d9cd86e3de16b67239fda56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#ac75968aa8d9cd86e3de16b67239fda56">operator==</a> (const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;other) const</td></tr>
+<tr class="memdesc:ac75968aa8d9cd86e3de16b67239fda56"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断迭代器是否相等  <br /></td></tr>
+<tr class="separator:ac75968aa8d9cd86e3de16b67239fda56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92e43da909b5677a4d94ab08a283ab7" id="r_ab92e43da909b5677a4d94ab08a283ab7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#ab92e43da909b5677a4d94ab08a283ab7">operator!=</a> (const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;other) const</td></tr>
+<tr class="memdesc:ab92e43da909b5677a4d94ab08a283ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断迭代器是否不相等  <br /></td></tr>
+<tr class="separator:ab92e43da909b5677a4d94ab08a283ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ad3668a735ee0adaf1530941ce2e588b8" id="r_ad3668a735ee0adaf1530941ce2e588b8"><td class="memItemLeft" align="right" valign="top">Iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#ad3668a735ee0adaf1530941ce2e588b8">_it</a></td></tr>
+<tr class="memdesc:ad3668a735ee0adaf1530941ce2e588b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">正向迭代器  <br /></td></tr>
+<tr class="separator:ad3668a735ee0adaf1530941ce2e588b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Iterator, class Ref = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt;<br />
+class XuSTL::ReverseIterator&lt; Iterator, Ref, Ptr &gt;</div><p>反向迭代器类 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Iterator</td><td>迭代器 </td></tr>
+    <tr><td class="paramname">Ref</td><td>自动推导的引用 </td></tr>
+    <tr><td class="paramname">Ptr</td><td>自动推导的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a11c43b4c6f58ec9b7e00087ae3ceee84" name="a11c43b4c6f58ec9b7e00087ae3ceee84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c43b4c6f58ec9b7e00087ae3ceee84">&#9670;&#160;</a></span>Self</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::Self =  <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a>&lt;Iterator, Ref, Ptr&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>简化 </p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ac29f0adad9c4789705e670f8387dcfbf" name="ac29f0adad9c4789705e670f8387dcfbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29f0adad9c4789705e670f8387dcfbf">&#9670;&#160;</a></span>ReverseIterator() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::ReverseIterator </td>
+          <td>(</td>
+          <td class="paramtype">Iterator&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 禁止隐式类型转换 </p>
+
+</div>
+</div>
+<a id="a6561c0fe326c23c2e5c19fa0a21d05c9" name="a6561c0fe326c23c2e5c19fa0a21d05c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6561c0fe326c23c2e5c19fa0a21d05c9">&#9670;&#160;</a></span>ReverseIterator() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::ReverseIterator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拷贝构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个迭代器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a49881303984316c03d53f9a79914a6dc" name="a49881303984316c03d53f9a79914a6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49881303984316c03d53f9a79914a6dc">&#9670;&#160;</a></span>ReverseIterator() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::ReverseIterator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个迭代器的右值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab92e43da909b5677a4d94ab08a283ab7" name="ab92e43da909b5677a4d94ab08a283ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92e43da909b5677a4d94ab08a283ab7">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断迭代器是否不相等 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个迭代器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>不相等返回 true 否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a20dad71d0ea1a01abc84eef4feefff64" name="a20dad71d0ea1a01abc84eef4feefff64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20dad71d0ea1a01abc84eef4feefff64">&#9670;&#160;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ref <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取迭代器内容 </p>
+<dl class="section return"><dt>返回</dt><dd>引用 </dd></dl>
+
+</div>
+</div>
+<a id="ae45f74db2f47c5097ec6db741cd60f2e" name="ae45f74db2f47c5097ec6db741cd60f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45f74db2f47c5097ec6db741cd60f2e">&#9670;&#160;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp; <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>反向迭代器 前置++ </p>
+<dl class="section return"><dt>返回</dt><dd>++后的反向迭代器 </dd></dl>
+
+</div>
+</div>
+<a id="aa86cd26dff4d0044ed574595ee1b7f22" name="aa86cd26dff4d0044ed574595ee1b7f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86cd26dff4d0044ed574595ee1b7f22">&#9670;&#160;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>反向迭代器 后置++ </p>
+<dl class="section return"><dt>返回</dt><dd>++前的反向迭代器 </dd></dl>
+
+</div>
+</div>
+<a id="aae87a8e11ff9bba41523912dbed307de" name="aae87a8e11ff9bba41523912dbed307de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae87a8e11ff9bba41523912dbed307de">&#9670;&#160;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp; <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>反向迭代器 前置&ndash; </p>
+<dl class="section return"><dt>返回</dt><dd>&ndash;后的反向迭代器 </dd></dl>
+
+</div>
+</div>
+<a id="a88205b241ef0dea4c118d1f2af68b427" name="a88205b241ef0dea4c118d1f2af68b427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88205b241ef0dea4c118d1f2af68b427">&#9670;&#160;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>反向迭代器 后置&ndash; </p>
+<dl class="section return"><dt>返回</dt><dd>&ndash;前的迭代器 </dd></dl>
+
+</div>
+</div>
+<a id="ac2419fe38f69a74e7c6d8e99472c3b74" name="ac2419fe38f69a74e7c6d8e99472c3b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2419fe38f69a74e7c6d8e99472c3b74">&#9670;&#160;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ptr <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>operator-&gt; 实现 </p>
+
+</div>
+</div>
+<a id="a303cbb4e96930813427645afca3b2c7e" name="a303cbb4e96930813427645afca3b2c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303cbb4e96930813427645afca3b2c7e">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp; <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>赋值运算符 </p>
+
+</div>
+</div>
+<a id="abd41969e92c1840b3b9ac9c0bf8dd9fc" name="abd41969e92c1840b3b9ac9c0bf8dd9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd41969e92c1840b3b9ac9c0bf8dd9fc">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp; <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动赋值运算符 </p>
+
+</div>
+</div>
+<a id="ac75968aa8d9cd86e3de16b67239fda56" name="ac75968aa8d9cd86e3de16b67239fda56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75968aa8d9cd86e3de16b67239fda56">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html#a11c43b4c6f58ec9b7e00087ae3ceee84">Self</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断迭代器是否相等 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个迭代器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相等返回 true 否则返回false </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ad3668a735ee0adaf1530941ce2e588b8" name="ad3668a735ee0adaf1530941ce2e588b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3668a735ee0adaf1530941ce2e588b8">&#9670;&#160;</a></span>_it</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Iterator , class Ref  = typename std::iterator_traits&lt;Iterator&gt;::reference, class Ptr  = typename std::iterator_traits&lt;Iterator&gt;::pointer&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Iterator <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a>&lt; Iterator, Ref, Ptr &gt;::_it</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>正向迭代器 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_xu_s_t_l.html">XuSTL</a></li><li class="navelem"><a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

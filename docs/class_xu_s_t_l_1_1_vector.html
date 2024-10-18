@@ -1,0 +1,1952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XuSTL: XuSTL::Vector&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">XuSTL<span id="projectnumber">&#160;beta 0.1</span>
+   </div>
+   <div id="projectbrief">Simulate the implementation of STL library</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_xu_s_t_l_1_1_vector.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_xu_s_t_l_1_1_vector-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">XuSTL::Vector&lt; T &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>自定义 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 类，提供动态数组功能。  
+ <a href="class_xu_s_t_l_1_1_vector.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_vector_8hpp_source.html">Vector.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a9148ca3893edd1ee0b8fa61929225f4a" id="r_a9148ca3893edd1ee0b8fa61929225f4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> = T *</td></tr>
+<tr class="memdesc:a9148ca3893edd1ee0b8fa61929225f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">普通迭代器  <br /></td></tr>
+<tr class="separator:a9148ca3893edd1ee0b8fa61929225f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53433257dd4f2a6dced169e9393445ee" id="r_a53433257dd4f2a6dced169e9393445ee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">const_iterator</a> = <a class="el" href="class_xu_s_t_l_1_1_const_iterator.html">ConstIterator</a>&lt; <a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> &gt;</td></tr>
+<tr class="memdesc:a53433257dd4f2a6dced169e9393445ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">const 迭代器  <br /></td></tr>
+<tr class="separator:a53433257dd4f2a6dced169e9393445ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd28d782a164715b5969f0d2b83f496" id="r_a3fd28d782a164715b5969f0d2b83f496"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">reverse_iterator</a> = <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a>&lt; <a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> &gt;</td></tr>
+<tr class="memdesc:a3fd28d782a164715b5969f0d2b83f496"><td class="mdescLeft">&#160;</td><td class="mdescRight">反向迭代器  <br /></td></tr>
+<tr class="separator:a3fd28d782a164715b5969f0d2b83f496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ced4cc7c412a1d2e48a60bbefd467ef" id="r_a0ced4cc7c412a1d2e48a60bbefd467ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">const_reverse_iterator</a> = <a class="el" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">ConstReverseIterator</a>&lt; <a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> &gt;</td></tr>
+<tr class="memdesc:a0ced4cc7c412a1d2e48a60bbefd467ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">const 反向迭代器  <br /></td></tr>
+<tr class="separator:a0ced4cc7c412a1d2e48a60bbefd467ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abd758b47fe606a317660ff56de32bd2e" id="r_abd758b47fe606a317660ff56de32bd2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">begin</a> ()</td></tr>
+<tr class="memdesc:abd758b47fe606a317660ff56de32bd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向第一个元素的迭代器。  <br /></td></tr>
+<tr class="separator:abd758b47fe606a317660ff56de32bd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96a8447883c58d8ee6bb6354d12572a" id="r_aa96a8447883c58d8ee6bb6354d12572a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">end</a> ()</td></tr>
+<tr class="memdesc:aa96a8447883c58d8ee6bb6354d12572a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向最后一个元素之后的迭代器。  <br /></td></tr>
+<tr class="separator:aa96a8447883c58d8ee6bb6354d12572a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6713805895d7b4a6379155c226f453a9" id="r_a6713805895d7b4a6379155c226f453a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a6713805895d7b4a6379155c226f453a9">begin</a> () const</td></tr>
+<tr class="memdesc:a6713805895d7b4a6379155c226f453a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向第一个元素的 const 迭代器。  <br /></td></tr>
+<tr class="separator:a6713805895d7b4a6379155c226f453a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a78f9730a582071295654bdef73d79d" id="r_a7a78f9730a582071295654bdef73d79d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a7a78f9730a582071295654bdef73d79d">end</a> () const</td></tr>
+<tr class="memdesc:a7a78f9730a582071295654bdef73d79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向最后一个元素之后的 const 迭代器。  <br /></td></tr>
+<tr class="separator:a7a78f9730a582071295654bdef73d79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6336684a5a71ad2691ff7522961a4022" id="r_a6336684a5a71ad2691ff7522961a4022"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a6336684a5a71ad2691ff7522961a4022">rbegin</a> ()</td></tr>
+<tr class="memdesc:a6336684a5a71ad2691ff7522961a4022"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向最后一个元素的反向迭代器。  <br /></td></tr>
+<tr class="separator:a6336684a5a71ad2691ff7522961a4022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc775bcd9d43dc9ed9a15a18c6287893" id="r_afc775bcd9d43dc9ed9a15a18c6287893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#afc775bcd9d43dc9ed9a15a18c6287893">rend</a> ()</td></tr>
+<tr class="memdesc:afc775bcd9d43dc9ed9a15a18c6287893"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向第一个元素之前的反向迭代器。  <br /></td></tr>
+<tr class="separator:afc775bcd9d43dc9ed9a15a18c6287893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7fe26b2d65151dfb018710f5c11958" id="r_afb7fe26b2d65151dfb018710f5c11958"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">const_reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#afb7fe26b2d65151dfb018710f5c11958">crbegin</a> () const</td></tr>
+<tr class="memdesc:afb7fe26b2d65151dfb018710f5c11958"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向最后一个元素的 const 反向迭代器。  <br /></td></tr>
+<tr class="separator:afb7fe26b2d65151dfb018710f5c11958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dbbc7a8cc64a7643734028a5e87a07" id="r_a00dbbc7a8cc64a7643734028a5e87a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">const_reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a00dbbc7a8cc64a7643734028a5e87a07">crend</a> () const</td></tr>
+<tr class="memdesc:a00dbbc7a8cc64a7643734028a5e87a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指向第一个元素之前的 const 反向迭代器。  <br /></td></tr>
+<tr class="separator:a00dbbc7a8cc64a7643734028a5e87a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3df218c69cd7f04774ddbd075f57db" id="r_a4e3df218c69cd7f04774ddbd075f57db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db">Vector</a> ()</td></tr>
+<tr class="memdesc:a4e3df218c69cd7f04774ddbd075f57db"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数，初始化容量为10。  <br /></td></tr>
+<tr class="separator:a4e3df218c69cd7f04774ddbd075f57db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6012da5cc5657612550328c6dea636dc" id="r_a6012da5cc5657612550328c6dea636dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a6012da5cc5657612550328c6dea636dc">Vector</a> (int n, const T &amp;value=T())</td></tr>
+<tr class="memdesc:a6012da5cc5657612550328c6dea636dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">用指定数量和默认值构造 Vector。  <br /></td></tr>
+<tr class="separator:a6012da5cc5657612550328c6dea636dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d221adba992a429fb75ccf9f810692f" id="r_a4d221adba992a429fb75ccf9f810692f"><td class="memTemplParams" colspan="2">template&lt;class T_iterator &gt; </td></tr>
+<tr class="memitem:a4d221adba992a429fb75ccf9f810692f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a4d221adba992a429fb75ccf9f810692f">Vector</a> (T_iterator first, T_iterator second)</td></tr>
+<tr class="memdesc:a4d221adba992a429fb75ccf9f810692f"><td class="mdescLeft">&#160;</td><td class="mdescRight">用迭代器范围构造 Vector。  <br /></td></tr>
+<tr class="separator:a4d221adba992a429fb75ccf9f810692f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab124e4b56bdf0a6b3ed5e1084de7244f" id="r_ab124e4b56bdf0a6b3ed5e1084de7244f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#ab124e4b56bdf0a6b3ed5e1084de7244f">Vector</a> (const <a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:ab124e4b56bdf0a6b3ed5e1084de7244f"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝构造函数。  <br /></td></tr>
+<tr class="separator:ab124e4b56bdf0a6b3ed5e1084de7244f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537f1ec46319b0eb229ff214c70369cc" id="r_a537f1ec46319b0eb229ff214c70369cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a537f1ec46319b0eb229ff214c70369cc">Vector</a> (<a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&amp;other)</td></tr>
+<tr class="memdesc:a537f1ec46319b0eb229ff214c70369cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动构造函数。  <br /></td></tr>
+<tr class="separator:a537f1ec46319b0eb229ff214c70369cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b17cd439da65607939837fe66476355" id="r_a1b17cd439da65607939837fe66476355"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a1b17cd439da65607939837fe66476355">Vector</a> (const std::initializer_list&lt; T &gt; &amp;list)</td></tr>
+<tr class="memdesc:a1b17cd439da65607939837fe66476355"><td class="mdescLeft">&#160;</td><td class="mdescRight">用初始化列表构造 Vector。  <br /></td></tr>
+<tr class="separator:a1b17cd439da65607939837fe66476355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369c5bfc5f20517d9a5bd86efa2c7e3e" id="r_a369c5bfc5f20517d9a5bd86efa2c7e3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a369c5bfc5f20517d9a5bd86efa2c7e3e">~Vector</a> ()</td></tr>
+<tr class="memdesc:a369c5bfc5f20517d9a5bd86efa2c7e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数。  <br /></td></tr>
+<tr class="separator:a369c5bfc5f20517d9a5bd86efa2c7e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb22dcad00db50abb067d4edcc36b56a" id="r_acb22dcad00db50abb067d4edcc36b56a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#acb22dcad00db50abb067d4edcc36b56a">operator=</a> (<a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; other)</td></tr>
+<tr class="memdesc:acb22dcad00db50abb067d4edcc36b56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">赋值运算符重载。  <br /></td></tr>
+<tr class="separator:acb22dcad00db50abb067d4edcc36b56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48de036a467670ad8fb4f743db67a5e8" id="r_a48de036a467670ad8fb4f743db67a5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8">operator=</a> (<a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&amp;other)</td></tr>
+<tr class="memdesc:a48de036a467670ad8fb4f743db67a5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动赋值运算符重载。  <br /></td></tr>
+<tr class="separator:a48de036a467670ad8fb4f743db67a5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56929dfd23f5d36d39fd5186442f6f72" id="r_a56929dfd23f5d36d39fd5186442f6f72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a56929dfd23f5d36d39fd5186442f6f72">operator==</a> (const <a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:a56929dfd23f5d36d39fd5186442f6f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">相等比较运算符重载。  <br /></td></tr>
+<tr class="separator:a56929dfd23f5d36d39fd5186442f6f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187a9761764d97693839384ec4ee359b" id="r_a187a9761764d97693839384ec4ee359b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a187a9761764d97693839384ec4ee359b">operator!=</a> (const <a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:a187a9761764d97693839384ec4ee359b"><td class="mdescLeft">&#160;</td><td class="mdescRight">不相等比较运算符重载。  <br /></td></tr>
+<tr class="separator:a187a9761764d97693839384ec4ee359b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc18767c37b6f4c6d4dc5aead2a1ab1" id="r_acdc18767c37b6f4c6d4dc5aead2a1ab1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">size</a> () const</td></tr>
+<tr class="memdesc:acdc18767c37b6f4c6d4dc5aead2a1ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前元素数量。  <br /></td></tr>
+<tr class="separator:acdc18767c37b6f4c6d4dc5aead2a1ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1592a4dec4596f547f338d3e79394e" id="r_a7a1592a4dec4596f547f338d3e79394e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e">capacity</a> () const</td></tr>
+<tr class="memdesc:a7a1592a4dec4596f547f338d3e79394e"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回当前容量。  <br /></td></tr>
+<tr class="separator:a7a1592a4dec4596f547f338d3e79394e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af3f512bc378a99e137ea8a13361316" id="r_a2af3f512bc378a99e137ea8a13361316"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316">reserve</a> (size_t n)</td></tr>
+<tr class="memdesc:a2af3f512bc378a99e137ea8a13361316"><td class="mdescLeft">&#160;</td><td class="mdescRight">预留容量。  <br /></td></tr>
+<tr class="separator:a2af3f512bc378a99e137ea8a13361316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1338d9c895f6b0170d262029aa4f06e" id="r_af1338d9c895f6b0170d262029aa4f06e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e">resize</a> (size_t n, const T &amp;value=T())</td></tr>
+<tr class="memdesc:af1338d9c895f6b0170d262029aa4f06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">调整大小，增加或减少元素数量。  <br /></td></tr>
+<tr class="separator:af1338d9c895f6b0170d262029aa4f06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc968af40ff4121bc6b50f3451a54da9" id="r_acc968af40ff4121bc6b50f3451a54da9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#acc968af40ff4121bc6b50f3451a54da9">clear</a> ()</td></tr>
+<tr class="memdesc:acc968af40ff4121bc6b50f3451a54da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空 Vector，移除所有元素。  <br /></td></tr>
+<tr class="separator:acc968af40ff4121bc6b50f3451a54da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0273e12d9437f3028d6fa932387830" id="r_aba0273e12d9437f3028d6fa932387830"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#aba0273e12d9437f3028d6fa932387830">empty</a> ()</td></tr>
+<tr class="memdesc:aba0273e12d9437f3028d6fa932387830"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 是否为空。  <br /></td></tr>
+<tr class="separator:aba0273e12d9437f3028d6fa932387830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190825aa1a458ccc03b44befba55da60" id="r_a190825aa1a458ccc03b44befba55da60"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a190825aa1a458ccc03b44befba55da60">operator[]</a> (size_t pos)</td></tr>
+<tr class="separator:a190825aa1a458ccc03b44befba55da60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21a35d1500f2b99266250f1485c2ea2" id="r_af21a35d1500f2b99266250f1485c2ea2"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#af21a35d1500f2b99266250f1485c2ea2">operator[]</a> (size_t pos) const</td></tr>
+<tr class="memdesc:af21a35d1500f2b99266250f1485c2ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回指定位置的元素。  <br /></td></tr>
+<tr class="separator:af21a35d1500f2b99266250f1485c2ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5554d5e478f3a3217df38bbcaa589d5" id="r_aa5554d5e478f3a3217df38bbcaa589d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5">push_back</a> (const T &amp;value)</td></tr>
+<tr class="memdesc:aa5554d5e478f3a3217df38bbcaa589d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">在末尾添加新元素。  <br /></td></tr>
+<tr class="separator:aa5554d5e478f3a3217df38bbcaa589d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ae0c2698265b9ccf8f0165f401601e" id="r_a33ae0c2698265b9ccf8f0165f401601e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a33ae0c2698265b9ccf8f0165f401601e">pop_back</a> ()</td></tr>
+<tr class="memdesc:a33ae0c2698265b9ccf8f0165f401601e"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除末尾元素。  <br /></td></tr>
+<tr class="separator:a33ae0c2698265b9ccf8f0165f401601e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe0a41a11bfd1ea84d5832a2d561738" id="r_a1fe0a41a11bfd1ea84d5832a2d561738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738">swap</a> (<a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;v) noexcept</td></tr>
+<tr class="memdesc:a1fe0a41a11bfd1ea84d5832a2d561738"><td class="mdescLeft">&#160;</td><td class="mdescRight">交换当前 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 和另一个 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 的内容。  <br /></td></tr>
+<tr class="separator:a1fe0a41a11bfd1ea84d5832a2d561738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925cbf3250caffb571d73d7005b6e9bd" id="r_a925cbf3250caffb571d73d7005b6e9bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd">insert</a> (<a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> pos, const T &amp;value)</td></tr>
+<tr class="memdesc:a925cbf3250caffb571d73d7005b6e9bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置插入新元素。  <br /></td></tr>
+<tr class="separator:a925cbf3250caffb571d73d7005b6e9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83969da80538b9015725cfacd3e41747" id="r_a83969da80538b9015725cfacd3e41747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a83969da80538b9015725cfacd3e41747">erase</a> (<a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> pos)</td></tr>
+<tr class="memdesc:a83969da80538b9015725cfacd3e41747"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除指定位置的元素。  <br /></td></tr>
+<tr class="separator:a83969da80538b9015725cfacd3e41747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:aef597063d04cd244c96c99b22a62308a" id="r_aef597063d04cd244c96c99b22a62308a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a></td></tr>
+<tr class="memdesc:aef597063d04cd244c96c99b22a62308a"><td class="mdescLeft">&#160;</td><td class="mdescRight">元素开始迭代器  <br /></td></tr>
+<tr class="separator:aef597063d04cd244c96c99b22a62308a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437bdf7303a39d9918c862944b045514" id="r_a437bdf7303a39d9918c862944b045514"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a></td></tr>
+<tr class="memdesc:a437bdf7303a39d9918c862944b045514"><td class="mdescLeft">&#160;</td><td class="mdescRight">元素结束迭代器  <br /></td></tr>
+<tr class="separator:a437bdf7303a39d9918c862944b045514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f3033a6535e2af99c3d4efa1e54d67" id="r_a62f3033a6535e2af99c3d4efa1e54d67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a></td></tr>
+<tr class="memdesc:a62f3033a6535e2af99c3d4efa1e54d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">内存末尾迭代器  <br /></td></tr>
+<tr class="separator:a62f3033a6535e2af99c3d4efa1e54d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
+class XuSTL::Vector&lt; T &gt;</div><p>自定义 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 类，提供动态数组功能。 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a53433257dd4f2a6dced169e9393445ee" name="a53433257dd4f2a6dced169e9393445ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53433257dd4f2a6dced169e9393445ee">&#9670;&#160;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::const_iterator =  <a class="el" href="class_xu_s_t_l_1_1_const_iterator.html">ConstIterator</a>&lt;<a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>const 迭代器 </p>
+
+</div>
+</div>
+<a id="a0ced4cc7c412a1d2e48a60bbefd467ef" name="a0ced4cc7c412a1d2e48a60bbefd467ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ced4cc7c412a1d2e48a60bbefd467ef">&#9670;&#160;</a></span>const_reverse_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::const_reverse_iterator =  <a class="el" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">ConstReverseIterator</a>&lt;<a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>const 反向迭代器 </p>
+
+</div>
+</div>
+<a id="a9148ca3893edd1ee0b8fa61929225f4a" name="a9148ca3893edd1ee0b8fa61929225f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9148ca3893edd1ee0b8fa61929225f4a">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::iterator =  T *</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>普通迭代器 </p>
+
+</div>
+</div>
+<a id="a3fd28d782a164715b5969f0d2b83f496" name="a3fd28d782a164715b5969f0d2b83f496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd28d782a164715b5969f0d2b83f496">&#9670;&#160;</a></span>reverse_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::reverse_iterator =  <a class="el" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator</a>&lt;<a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>反向迭代器 </p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a4e3df218c69cd7f04774ddbd075f57db" name="a4e3df218c69cd7f04774ddbd075f57db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3df218c69cd7f04774ddbd075f57db">&#9670;&#160;</a></span>Vector() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::Vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>默认构造函数，初始化容量为10。 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a4e3df218c69cd7f04774ddbd075f57db_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a4e3df218c69cd7f04774ddbd075f57db_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a4e3df218c69cd7f04774ddbd075f57db_cgraph" id="aclass_xu_s_t_l_1_1_vector_a4e3df218c69cd7f04774ddbd075f57db_cgraph">
+<area shape="rect" title="默认构造函数，初始化容量为10。" alt="" coords="5,31,165,56"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="213,31,381,56"/>
+<area shape="poly" title=" " alt="" coords="166,41,200,41,200,46,166,46"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="429,5,604,31"/>
+<area shape="poly" title=" " alt="" coords="382,31,416,27,416,32,382,36"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="444,55,589,80"/>
+<area shape="poly" title=" " alt="" coords="382,50,430,55,430,61,382,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6012da5cc5657612550328c6dea636dc" name="a6012da5cc5657612550328c6dea636dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6012da5cc5657612550328c6dea636dc">&#9670;&#160;</a></span>Vector() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::Vector </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em> = <code>T()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用指定数量和默认值构造 Vector。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>元素数量。 </td></tr>
+    <tr><td class="paramname">value</td><td>默认值，默认为 T 的默认构造函数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d221adba992a429fb75ccf9f810692f" name="a4d221adba992a429fb75ccf9f810692f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d221adba992a429fb75ccf9f810692f">&#9670;&#160;</a></span>Vector() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class T_iterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::Vector </td>
+          <td>(</td>
+          <td class="paramtype">T_iterator&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T_iterator&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用迭代器范围构造 Vector。 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T_iterator</td><td>迭代器类型。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>范围开始迭代器。 </td></tr>
+    <tr><td class="paramname">second</td><td>范围结束迭代器。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab124e4b56bdf0a6b3ed5e1084de7244f" name="ab124e4b56bdf0a6b3ed5e1084de7244f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab124e4b56bdf0a6b3ed5e1084de7244f">&#9670;&#160;</a></span>Vector() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::Vector </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拷贝构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个 Vector。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_ab124e4b56bdf0a6b3ed5e1084de7244f_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_ab124e4b56bdf0a6b3ed5e1084de7244f_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_ab124e4b56bdf0a6b3ed5e1084de7244f_cgraph" id="aclass_xu_s_t_l_1_1_vector_ab124e4b56bdf0a6b3ed5e1084de7244f_cgraph">
+<area shape="rect" title="拷贝构造函数。" alt="" coords="5,5,165,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738" title="交换当前 Vector 和另一个 Vector 的内容。" alt="" coords="213,5,367,31"/>
+<area shape="poly" title=" " alt="" coords="165,15,200,15,200,21,165,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a537f1ec46319b0eb229ff214c70369cc" name="a537f1ec46319b0eb229ff214c70369cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537f1ec46319b0eb229ff214c70369cc">&#9670;&#160;</a></span>Vector() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::Vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个 Vector。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b17cd439da65607939837fe66476355" name="a1b17cd439da65607939837fe66476355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b17cd439da65607939837fe66476355">&#9670;&#160;</a></span>Vector() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::Vector </td>
+          <td>(</td>
+          <td class="paramtype">const std::initializer_list&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用初始化列表构造 Vector。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>初始化列表。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a369c5bfc5f20517d9a5bd86efa2c7e3e" name="a369c5bfc5f20517d9a5bd86efa2c7e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369c5bfc5f20517d9a5bd86efa2c7e3e">&#9670;&#160;</a></span>~Vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::~<a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="abd758b47fe606a317660ff56de32bd2e" name="abd758b47fe606a317660ff56de32bd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd758b47fe606a317660ff56de32bd2e">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向第一个元素的迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向第一个元素的迭代器。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_abd758b47fe606a317660ff56de32bd2e_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_abd758b47fe606a317660ff56de32bd2e_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_abd758b47fe606a317660ff56de32bd2e_icgraph" id="aclass_xu_s_t_l_1_1_vector_abd758b47fe606a317660ff56de32bd2e_icgraph">
+<area shape="rect" title="返回指向第一个元素的迭代器。" alt="" coords="344,55,499,80"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a00dbbc7a8cc64a7643734028a5e87a07" title="返回指向第一个元素之前的 const 反向迭代器。" alt="" coords="141,5,296,31"/>
+<area shape="poly" title=" " alt="" coords="355,54,271,33,272,28,356,49"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#afc775bcd9d43dc9ed9a15a18c6287893" title="返回指向第一个元素之前的反向迭代器。" alt="" coords="145,55,293,80"/>
+<area shape="poly" title=" " alt="" coords="330,70,293,70,293,65,330,65"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="5,80,93,105"/>
+<area shape="poly" title=" " alt="" coords="353,85,296,94,187,99,93,97,93,92,186,94,296,89,352,80"/>
+<area shape="poly" title=" " alt="" coords="131,83,94,89,93,84,130,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6713805895d7b4a6379155c226f453a9" name="a6713805895d7b4a6379155c226f453a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6713805895d7b4a6379155c226f453a9">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">const_iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向第一个元素的 const 迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向第一个元素的 const 迭代器。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_cgraph" id="aclass_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_cgraph">
+<area shape="rect" title="返回指向第一个元素的 const 迭代器。" alt="" coords="5,29,160,55"/>
+<area shape="poly" title=" " alt="" coords="57,31,52,21,54,11,65,5,83,3,104,6,113,15,109,19,101,11,83,8,67,10,59,15,57,20,62,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_icgraph" id="aclass_xu_s_t_l_1_1_vector_a6713805895d7b4a6379155c226f453a9_icgraph">
+<area shape="rect" title="返回指向第一个元素的 const 迭代器。" alt="" coords="5,29,160,55"/>
+<area shape="poly" title=" " alt="" coords="109,19,101,11,83,8,67,10,59,15,57,20,62,28,57,31,52,21,54,11,65,5,83,3,104,6,113,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a1592a4dec4596f547f338d3e79394e" name="a7a1592a4dec4596f547f338d3e79394e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a1592a4dec4596f547f338d3e79394e">&#9670;&#160;</a></span>capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回当前容量。 </p>
+<dl class="section return"><dt>返回</dt><dd>当前容量。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a7a1592a4dec4596f547f338d3e79394e_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a7a1592a4dec4596f547f338d3e79394e_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a7a1592a4dec4596f547f338d3e79394e_icgraph" id="aclass_xu_s_t_l_1_1_vector_a7a1592a4dec4596f547f338d3e79394e_icgraph">
+<area shape="rect" title="返回当前容量。" alt="" coords="899,132,1073,157"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="477,56,633,81"/>
+<area shape="poly" title=" " alt="" coords="939,130,850,103,737,85,633,75,633,70,737,80,851,98,940,125"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,56,142,81"/>
+<area shape="poly" title=" " alt="" coords="885,139,142,75,143,70,885,133"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="683,157,851,183"/>
+<area shape="poly" title=" " alt="" coords="885,159,851,163,850,158,885,154"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e" title="调整大小，增加或减少元素数量。" alt="" coords="475,207,634,232"/>
+<area shape="poly" title=" " alt="" coords="946,165,901,183,851,198,738,215,635,222,634,216,738,210,850,193,900,178,944,160"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,5,427,31"/>
+<area shape="poly" title=" " alt="" coords="484,55,388,33,390,28,485,50"/>
+<area shape="poly" title=" " alt="" coords="463,71,142,71,142,66,463,66"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" title=" " alt="" coords="260,36,143,62,142,57,259,31"/>
+<area shape="poly" title=" " alt="" coords="725,154,581,84,583,79,728,149"/>
+<area shape="poly" title=" " alt="" coords="699,188,611,209,609,204,698,183"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db" title="默认构造函数，初始化容量为10。" alt="" coords="475,157,635,183"/>
+<area shape="poly" title=" " alt="" coords="669,173,635,173,635,167,669,167"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc968af40ff4121bc6b50f3451a54da9" name="acc968af40ff4121bc6b50f3451a54da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc968af40ff4121bc6b50f3451a54da9">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清空 Vector，移除所有元素。 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_acc968af40ff4121bc6b50f3451a54da9_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_acc968af40ff4121bc6b50f3451a54da9_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_acc968af40ff4121bc6b50f3451a54da9_icgraph" id="aclass_xu_s_t_l_1_1_vector_acc968af40ff4121bc6b50f3451a54da9_icgraph">
+<area shape="rect" title="清空 Vector，移除所有元素。" alt="" coords="141,5,292,31"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="5,5,93,31"/>
+<area shape="poly" title=" " alt="" coords="128,21,93,21,93,15,128,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb7fe26b2d65151dfb018710f5c11958" name="afb7fe26b2d65151dfb018710f5c11958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7fe26b2d65151dfb018710f5c11958">&#9670;&#160;</a></span>crbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">const_reverse_iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::crbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向最后一个元素的 const 反向迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向最后一个元素的 const 反向迭代器。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_afb7fe26b2d65151dfb018710f5c11958_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_afb7fe26b2d65151dfb018710f5c11958_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_afb7fe26b2d65151dfb018710f5c11958_cgraph" id="aclass_xu_s_t_l_1_1_vector_afb7fe26b2d65151dfb018710f5c11958_cgraph">
+<area shape="rect" title="返回指向最后一个元素的 const 反向迭代器。" alt="" coords="5,5,172,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a" title="返回指向最后一个元素之后的迭代器。" alt="" coords="220,5,363,31"/>
+<area shape="poly" title=" " alt="" coords="173,15,206,15,206,21,173,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a00dbbc7a8cc64a7643734028a5e87a07" name="a00dbbc7a8cc64a7643734028a5e87a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00dbbc7a8cc64a7643734028a5e87a07">&#9670;&#160;</a></span>crend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">const_reverse_iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::crend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向第一个元素之前的 const 反向迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向第一个元素之前的 const 反向迭代器。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a00dbbc7a8cc64a7643734028a5e87a07_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a00dbbc7a8cc64a7643734028a5e87a07_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a00dbbc7a8cc64a7643734028a5e87a07_cgraph" id="aclass_xu_s_t_l_1_1_vector_a00dbbc7a8cc64a7643734028a5e87a07_cgraph">
+<area shape="rect" title="返回指向第一个元素之前的 const 反向迭代器。" alt="" coords="5,5,160,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e" title="返回指向第一个元素的迭代器。" alt="" coords="208,5,363,31"/>
+<area shape="poly" title=" " alt="" coords="160,15,194,15,194,21,160,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aba0273e12d9437f3028d6fa932387830" name="aba0273e12d9437f3028d6fa932387830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0273e12d9437f3028d6fa932387830">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 是否为空。 </p>
+<dl class="section return"><dt>返回</dt><dd>如果为空则返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a id="aa96a8447883c58d8ee6bb6354d12572a" name="aa96a8447883c58d8ee6bb6354d12572a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa96a8447883c58d8ee6bb6354d12572a">&#9670;&#160;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向最后一个元素之后的迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向最后一个元素之后的迭代器。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_aa96a8447883c58d8ee6bb6354d12572a_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_aa96a8447883c58d8ee6bb6354d12572a_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_aa96a8447883c58d8ee6bb6354d12572a_icgraph" id="aclass_xu_s_t_l_1_1_vector_aa96a8447883c58d8ee6bb6354d12572a_icgraph">
+<area shape="rect" title="返回指向最后一个元素之后的迭代器。" alt="" coords="356,31,499,56"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#afb7fe26b2d65151dfb018710f5c11958" title="返回指向最后一个元素的 const 反向迭代器。" alt="" coords="141,5,308,31"/>
+<area shape="poly" title=" " alt="" coords="342,35,308,31,309,26,342,30"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a6336684a5a71ad2691ff7522961a4022" title="返回指向最后一个元素的反向迭代器。" alt="" coords="145,55,305,80"/>
+<area shape="poly" title=" " alt="" coords="343,56,305,61,304,55,342,51"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="5,55,93,80"/>
+<area shape="poly" title=" " alt="" coords="131,70,93,70,93,65,131,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a78f9730a582071295654bdef73d79d" name="a7a78f9730a582071295654bdef73d79d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a78f9730a582071295654bdef73d79d">&#9670;&#160;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">const_iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向最后一个元素之后的 const 迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向最后一个元素之后的 const 迭代器。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_cgraph" id="aclass_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_cgraph">
+<area shape="rect" title="返回指向最后一个元素之后的 const 迭代器。" alt="" coords="5,29,148,55"/>
+<area shape="poly" title=" " alt="" coords="53,30,48,21,50,11,60,5,77,3,96,6,105,15,101,18,94,11,77,8,62,10,55,15,53,20,57,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_icgraph" id="aclass_xu_s_t_l_1_1_vector_a7a78f9730a582071295654bdef73d79d_icgraph">
+<area shape="rect" title="返回指向最后一个元素之后的 const 迭代器。" alt="" coords="5,29,148,55"/>
+<area shape="poly" title=" " alt="" coords="101,18,94,11,77,8,62,10,55,15,53,20,57,28,53,30,48,21,50,11,60,5,77,3,96,6,105,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a83969da80538b9015725cfacd3e41747" name="a83969da80538b9015725cfacd3e41747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83969da80538b9015725cfacd3e41747">&#9670;&#160;</a></span>erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除指定位置的元素。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>要移除的元素位置。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>移除后的位置迭代器。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>如果 pos 越界。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a83969da80538b9015725cfacd3e41747_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a83969da80538b9015725cfacd3e41747_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a83969da80538b9015725cfacd3e41747_icgraph" id="aclass_xu_s_t_l_1_1_vector_a83969da80538b9015725cfacd3e41747_icgraph">
+<area shape="rect" title="移除指定位置的元素。" alt="" coords="371,5,525,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a33ae0c2698265b9ccf8f0165f401601e" title="移除末尾元素。" alt="" coords="141,5,323,31"/>
+<area shape="poly" title=" " alt="" coords="357,21,323,21,323,15,357,15"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="5,5,93,31"/>
+<area shape="poly" title=" " alt="" coords="128,21,94,21,94,15,128,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a925cbf3250caffb571d73d7005b6e9bd" name="a925cbf3250caffb571d73d7005b6e9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925cbf3250caffb571d73d7005b6e9bd">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在指定位置插入新元素。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>插入位置。 </td></tr>
+    <tr><td class="paramname">value</td><td>要插入的元素。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新插入元素的位置迭代器。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_cgraph" id="aclass_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_cgraph">
+<area shape="rect" title="在指定位置插入新元素。" alt="" coords="5,29,161,55"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="425,5,600,31"/>
+<area shape="poly" title=" " alt="" coords="135,27,209,14,314,9,412,10,412,15,314,14,210,19,136,32"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="209,29,377,55"/>
+<area shape="poly" title=" " alt="" coords="162,39,196,39,196,45,162,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="440,55,585,80"/>
+<area shape="poly" title=" " alt="" coords="136,52,210,65,323,70,426,69,426,75,322,76,209,70,135,57"/>
+<area shape="poly" title=" " alt="" coords="378,30,412,26,412,32,378,35"/>
+<area shape="poly" title=" " alt="" coords="378,49,426,55,426,60,378,54"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_icgraph" id="aclass_xu_s_t_l_1_1_vector_a925cbf3250caffb571d73d7005b6e9bd_icgraph">
+<area shape="rect" title="在指定位置插入新元素。" alt="" coords="475,31,631,56"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,5,427,31"/>
+<area shape="poly" title=" " alt="" coords="460,35,427,31,427,26,461,30"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,55,142,80"/>
+<area shape="poly" title=" " alt="" coords="461,51,142,68,142,62,461,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" title=" " alt="" coords="259,36,143,61,141,56,258,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a187a9761764d97693839384ec4ee359b" name="a187a9761764d97693839384ec4ee359b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187a9761764d97693839384ec4ee359b">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>不相等比较运算符重载。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个 Vector。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果不相等则返回 true，否则返回 false。 </dd></dl>
+
+</div>
+</div>
+<a id="a48de036a467670ad8fb4f743db67a5e8" name="a48de036a467670ad8fb4f743db67a5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48de036a467670ad8fb4f743db67a5e8">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp; <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动赋值运算符重载。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个 Vector。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>当前 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 的引用。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a48de036a467670ad8fb4f743db67a5e8_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a48de036a467670ad8fb4f743db67a5e8_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a48de036a467670ad8fb4f743db67a5e8_cgraph" id="aclass_xu_s_t_l_1_1_vector_a48de036a467670ad8fb4f743db67a5e8_cgraph">
+<area shape="rect" title="移动赋值运算符重载。" alt="" coords="5,29,191,55"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,29,427,55"/>
+<area shape="poly" title=" " alt="" coords="191,39,225,39,225,45,191,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="475,29,631,55"/>
+<area shape="poly" title=" " alt="" coords="427,39,461,39,461,45,427,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="895,5,1069,31"/>
+<area shape="poly" title=" " alt="" coords="604,27,678,14,783,9,881,10,881,15,783,14,679,19,605,32"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="679,29,847,55"/>
+<area shape="poly" title=" " alt="" coords="631,39,665,39,665,45,631,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="909,55,1055,80"/>
+<area shape="poly" title=" " alt="" coords="605,52,679,65,792,70,896,69,896,75,792,76,678,70,604,57"/>
+<area shape="poly" title=" " alt="" coords="847,30,881,26,882,32,847,35"/>
+<area shape="poly" title=" " alt="" coords="847,49,896,55,895,60,847,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb22dcad00db50abb067d4edcc36b56a" name="acb22dcad00db50abb067d4edcc36b56a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb22dcad00db50abb067d4edcc36b56a">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp; <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>赋值运算符重载。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个 Vector。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>当前 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 的引用。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_acb22dcad00db50abb067d4edcc36b56a_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_acb22dcad00db50abb067d4edcc36b56a_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_acb22dcad00db50abb067d4edcc36b56a_cgraph" id="aclass_xu_s_t_l_1_1_vector_acb22dcad00db50abb067d4edcc36b56a_cgraph">
+<area shape="rect" title="赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738" title="交换当前 Vector 和另一个 Vector 的内容。" alt="" coords="239,5,392,31"/>
+<area shape="poly" title=" " alt="" coords="191,15,225,15,225,21,191,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a56929dfd23f5d36d39fd5186442f6f72" name="a56929dfd23f5d36d39fd5186442f6f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56929dfd23f5d36d39fd5186442f6f72">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>相等比较运算符重载。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个 Vector。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果相等则返回 true，否则返回 false。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a56929dfd23f5d36d39fd5186442f6f72_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a56929dfd23f5d36d39fd5186442f6f72_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a56929dfd23f5d36d39fd5186442f6f72_cgraph" id="aclass_xu_s_t_l_1_1_vector_a56929dfd23f5d36d39fd5186442f6f72_cgraph">
+<area shape="rect" title="相等比较运算符重载。" alt="" coords="5,5,201,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="249,5,395,31"/>
+<area shape="poly" title=" " alt="" coords="202,15,236,15,236,21,202,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a190825aa1a458ccc03b44befba55da60" name="a190825aa1a458ccc03b44befba55da60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190825aa1a458ccc03b44befba55da60">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a190825aa1a458ccc03b44befba55da60_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a190825aa1a458ccc03b44befba55da60_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a190825aa1a458ccc03b44befba55da60_cgraph" id="aclass_xu_s_t_l_1_1_vector_a190825aa1a458ccc03b44befba55da60_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,189,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="237,5,383,31"/>
+<area shape="poly" title=" " alt="" coords="190,15,224,15,224,21,190,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af21a35d1500f2b99266250f1485c2ea2" name="af21a35d1500f2b99266250f1485c2ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21a35d1500f2b99266250f1485c2ea2">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指定位置的元素。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>元素位置。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定位置的元素。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>如果 pos 越界。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33ae0c2698265b9ccf8f0165f401601e" name="a33ae0c2698265b9ccf8f0165f401601e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ae0c2698265b9ccf8f0165f401601e">&#9670;&#160;</a></span>pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::pop_back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除末尾元素。 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_cgraph" id="aclass_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_cgraph">
+<area shape="rect" title="移除末尾元素。" alt="" coords="5,5,187,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a83969da80538b9015725cfacd3e41747" title="移除指定位置的元素。" alt="" coords="235,5,389,31"/>
+<area shape="poly" title=" " alt="" coords="187,15,221,15,221,21,187,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_icgraph" id="aclass_xu_s_t_l_1_1_vector_a33ae0c2698265b9ccf8f0165f401601e_icgraph">
+<area shape="rect" title="移除末尾元素。" alt="" coords="141,5,323,31"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="5,5,93,31"/>
+<area shape="poly" title=" " alt="" coords="128,21,94,21,94,15,128,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa5554d5e478f3a3217df38bbcaa589d5" name="aa5554d5e478f3a3217df38bbcaa589d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5554d5e478f3a3217df38bbcaa589d5">&#9670;&#160;</a></span>push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在末尾添加新元素。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>要添加的元素。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_cgraph" id="aclass_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_cgraph">
+<area shape="rect" title="在末尾添加新元素。" alt="" coords="5,29,193,55"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="241,29,397,55"/>
+<area shape="poly" title=" " alt="" coords="193,39,228,39,228,45,193,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="661,5,836,31"/>
+<area shape="poly" title=" " alt="" coords="371,27,445,14,550,9,648,10,648,15,550,14,446,19,372,32"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="445,29,613,55"/>
+<area shape="poly" title=" " alt="" coords="398,39,432,39,432,45,398,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="676,55,821,80"/>
+<area shape="poly" title=" " alt="" coords="372,52,446,65,559,70,662,69,662,75,558,76,445,70,371,57"/>
+<area shape="poly" title=" " alt="" coords="614,30,648,26,648,32,614,35"/>
+<area shape="poly" title=" " alt="" coords="614,49,662,55,662,60,614,54"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_icgraph" id="aclass_xu_s_t_l_1_1_vector_aa5554d5e478f3a3217df38bbcaa589d5_icgraph">
+<area shape="rect" title="在末尾添加新元素。" alt="" coords="239,31,427,56"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="225,34,190,31,191,25,226,29"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,55,142,80"/>
+<area shape="poly" title=" " alt="" coords="226,57,143,66,142,60,225,52"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6336684a5a71ad2691ff7522961a4022" name="a6336684a5a71ad2691ff7522961a4022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6336684a5a71ad2691ff7522961a4022">&#9670;&#160;</a></span>rbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">reverse_iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::rbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向最后一个元素的反向迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向最后一个元素的反向迭代器。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_cgraph" id="aclass_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_cgraph">
+<area shape="rect" title="返回指向最后一个元素的反向迭代器。" alt="" coords="5,5,165,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a" title="返回指向最后一个元素之后的迭代器。" alt="" coords="213,5,356,31"/>
+<area shape="poly" title=" " alt="" coords="166,15,199,15,199,21,166,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_icgraph" id="aclass_xu_s_t_l_1_1_vector_a6336684a5a71ad2691ff7522961a4022_icgraph">
+<area shape="rect" title="返回指向最后一个元素的反向迭代器。" alt="" coords="141,5,301,31"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="5,5,93,31"/>
+<area shape="poly" title=" " alt="" coords="128,21,94,21,94,15,128,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc775bcd9d43dc9ed9a15a18c6287893" name="afc775bcd9d43dc9ed9a15a18c6287893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc775bcd9d43dc9ed9a15a18c6287893">&#9670;&#160;</a></span>rend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">reverse_iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::rend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回指向第一个元素之前的反向迭代器。 </p>
+<dl class="section return"><dt>返回</dt><dd>指向第一个元素之前的反向迭代器。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_cgraph" id="aclass_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_cgraph">
+<area shape="rect" title="返回指向第一个元素之前的反向迭代器。" alt="" coords="5,5,153,31"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e" title="返回指向第一个元素的迭代器。" alt="" coords="201,5,356,31"/>
+<area shape="poly" title=" " alt="" coords="153,15,188,15,188,21,153,21"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_icgraph" id="aclass_xu_s_t_l_1_1_vector_afc775bcd9d43dc9ed9a15a18c6287893_icgraph">
+<area shape="rect" title="返回指向第一个元素之前的反向迭代器。" alt="" coords="141,5,289,31"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="5,5,93,31"/>
+<area shape="poly" title=" " alt="" coords="127,21,94,21,94,15,127,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2af3f512bc378a99e137ea8a13361316" name="a2af3f512bc378a99e137ea8a13361316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af3f512bc378a99e137ea8a13361316">&#9670;&#160;</a></span>reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>预留容量。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>预留的容量大小。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_cgraph" id="aclass_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_cgraph">
+<area shape="rect" title="预留容量。" alt="" coords="5,31,173,56"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="221,5,396,31"/>
+<area shape="poly" title=" " alt="" coords="174,31,208,27,208,32,174,36"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="236,55,381,80"/>
+<area shape="poly" title=" " alt="" coords="174,50,222,55,222,61,174,55"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_icgraph" id="aclass_xu_s_t_l_1_1_vector_a2af3f512bc378a99e137ea8a13361316_icgraph">
+<area shape="rect" title="预留容量。" alt="" coords="683,80,851,105"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="477,31,633,56"/>
+<area shape="poly" title=" " alt="" coords="698,79,609,59,611,53,699,74"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e" title="调整大小，增加或减少元素数量。" alt="" coords="475,80,634,105"/>
+<area shape="poly" title=" " alt="" coords="669,95,634,95,634,90,669,90"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db" title="默认构造函数，初始化容量为10。" alt="" coords="475,129,635,155"/>
+<area shape="poly" title=" " alt="" coords="699,111,611,132,609,127,698,106"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,5,427,31"/>
+<area shape="poly" title=" " alt="" coords="463,36,427,31,427,26,464,30"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,55,142,80"/>
+<area shape="poly" title=" " alt="" coords="463,51,143,68,142,62,463,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" title=" " alt="" coords="259,36,143,61,141,56,258,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1338d9c895f6b0170d262029aa4f06e" name="af1338d9c895f6b0170d262029aa4f06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1338d9c895f6b0170d262029aa4f06e">&#9670;&#160;</a></span>resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em> = <code>T()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>调整大小，增加或减少元素数量。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>新的大小。 </td></tr>
+    <tr><td class="paramname">value</td><td>新增元素的默认值，默认为 T 的默认构造函数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_af1338d9c895f6b0170d262029aa4f06e_cgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_af1338d9c895f6b0170d262029aa4f06e_cgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_af1338d9c895f6b0170d262029aa4f06e_cgraph" id="aclass_xu_s_t_l_1_1_vector_af1338d9c895f6b0170d262029aa4f06e_cgraph">
+<area shape="rect" title="调整大小，增加或减少元素数量。" alt="" coords="5,29,164,55"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="428,5,603,31"/>
+<area shape="poly" title=" " alt="" coords="137,27,212,14,316,9,414,10,414,15,316,14,212,19,138,32"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="212,29,380,55"/>
+<area shape="poly" title=" " alt="" coords="164,39,198,39,198,45,164,45"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="443,55,588,80"/>
+<area shape="poly" title=" " alt="" coords="138,52,212,65,325,70,429,69,429,74,325,76,212,70,137,57"/>
+<area shape="poly" title=" " alt="" coords="380,30,414,26,415,32,381,35"/>
+<area shape="poly" title=" " alt="" coords="381,49,429,55,428,60,380,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acdc18767c37b6f4c6d4dc5aead2a1ab1" name="acdc18767c37b6f4c6d4dc5aead2a1ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc18767c37b6f4c6d4dc5aead2a1ab1">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回当前元素数量。 </p>
+<dl class="section return"><dt>返回</dt><dd>当前元素数量。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_acdc18767c37b6f4c6d4dc5aead2a1ab1_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_acdc18767c37b6f4c6d4dc5aead2a1ab1_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_acdc18767c37b6f4c6d4dc5aead2a1ab1_icgraph" id="aclass_xu_s_t_l_1_1_vector_acdc18767c37b6f4c6d4dc5aead2a1ab1_icgraph">
+<area shape="rect" title="返回当前元素数量。" alt="" coords="927,183,1072,208"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="477,56,633,81"/>
+<area shape="poly" title=" " alt="" coords="975,174,933,136,906,118,878,103,816,84,751,73,689,68,633,67,633,62,689,62,752,67,817,79,880,98,909,113,936,132,979,170"/>
+<area shape="rect" href="main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,56,142,81"/>
+<area shape="poly" title=" " alt="" coords="959,179,921,162,878,149,812,136,724,123,511,101,142,74,143,69,511,96,724,118,813,130,879,143,923,157,962,174"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a56929dfd23f5d36d39fd5186442f6f72" title="相等比较运算符重载。" alt="" coords="683,259,879,284"/>
+<area shape="poly" title=" " alt="" coords="952,216,880,242,822,261,821,256,878,237,950,211"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a190825aa1a458ccc03b44befba55da60" title=" " alt="" coords="689,308,873,333"/>
+<area shape="poly" title=" " alt="" coords="979,220,936,261,909,281,880,299,852,310,850,305,877,294,906,277,933,257,975,216"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="697,157,865,183"/>
+<area shape="poly" title=" " alt="" coords="912,188,865,182,865,177,913,183"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e" title="调整大小，增加或减少元素数量。" alt="" coords="475,207,634,232"/>
+<area shape="poly" title=" " alt="" coords="913,203,634,218,634,212,913,197"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,5,427,31"/>
+<area shape="poly" title=" " alt="" coords="484,55,388,33,390,28,485,50"/>
+<area shape="poly" title=" " alt="" coords="463,71,142,71,142,66,463,66"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" title=" " alt="" coords="260,36,143,62,142,57,259,31"/>
+<area shape="poly" title=" " alt="" coords="737,154,583,84,585,79,740,149"/>
+<area shape="poly" title=" " alt="" coords="709,188,614,209,613,204,708,183"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db" title="默认构造函数，初始化容量为10。" alt="" coords="475,157,635,183"/>
+<area shape="poly" title=" " alt="" coords="683,173,635,173,635,167,683,167"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1fe0a41a11bfd1ea84d5832a2d561738" name="a1fe0a41a11bfd1ea84d5832a2d561738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe0a41a11bfd1ea84d5832a2d561738">&#9670;&#160;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>交换当前 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 和另一个 <a class="el" href="class_xu_s_t_l_1_1_vector.html" title="自定义 Vector 类，提供动态数组功能。">Vector</a> 的内容。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>另一个 Vector。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_xu_s_t_l_1_1_vector_a1fe0a41a11bfd1ea84d5832a2d561738_icgraph.png" border="0" usemap="#aclass_xu_s_t_l_1_1_vector_a1fe0a41a11bfd1ea84d5832a2d561738_icgraph" alt=""/></div>
+<map name="aclass_xu_s_t_l_1_1_vector_a1fe0a41a11bfd1ea84d5832a2d561738_icgraph" id="aclass_xu_s_t_l_1_1_vector_a1fe0a41a11bfd1ea84d5832a2d561738_icgraph">
+<area shape="rect" title="交换当前 Vector 和另一个 Vector 的内容。" alt="" coords="239,31,392,56"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#acb22dcad00db50abb067d4edcc36b56a" title="赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" title=" " alt="" coords="225,35,191,31,191,26,225,30"/>
+<area shape="rect" href="class_xu_s_t_l_1_1_vector.html#ab124e4b56bdf0a6b3ed5e1084de7244f" title="拷贝构造函数。" alt="" coords="18,55,178,80"/>
+<area shape="poly" title=" " alt="" coords="225,56,179,61,178,56,225,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a62f3033a6535e2af99c3d4efa1e54d67" name="a62f3033a6535e2af99c3d4efa1e54d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f3033a6535e2af99c3d4efa1e54d67">&#9670;&#160;</a></span>_end_of_storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::_end_of_storage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>内存末尾迭代器 </p>
+
+</div>
+</div>
+<a id="a437bdf7303a39d9918c862944b045514" name="a437bdf7303a39d9918c862944b045514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437bdf7303a39d9918c862944b045514">&#9670;&#160;</a></span>_finish</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::_finish</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>元素结束迭代器 </p>
+
+</div>
+</div>
+<a id="aef597063d04cd244c96c99b22a62308a" name="aef597063d04cd244c96c99b22a62308a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef597063d04cd244c96c99b22a62308a">&#9670;&#160;</a></span>_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="el" href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a>&lt; T &gt;::_start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>元素开始迭代器 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_xu_s_t_l.html">XuSTL</a></li><li class="navelem"><a class="el" href="class_xu_s_t_l_1_1_vector.html">Vector</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

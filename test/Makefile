@@ -1,7 +1,8 @@
 .PHONY:all
-all:clean test
+all:test
 test:main.cpp
-	g++ $^ -o $@ -std=c++11 -I../include/
+	g++ $^ -o $@ -std=c++11 -I../include/container/
 
+.PHONY:clean
 clean:
 	rm -rf test

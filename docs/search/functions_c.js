@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['vector_0',['vector',['../class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db',1,'XuSTL::Vector::Vector()'],['../class_xu_s_t_l_1_1_vector.html#a6012da5cc5657612550328c6dea636dc',1,'XuSTL::Vector::Vector(int n, const T &amp;value=T())'],['../class_xu_s_t_l_1_1_vector.html#a4d221adba992a429fb75ccf9f810692f',1,'XuSTL::Vector::Vector(T_iterator first, T_iterator second)'],['../class_xu_s_t_l_1_1_vector.html#ab124e4b56bdf0a6b3ed5e1084de7244f',1,'XuSTL::Vector::Vector(const Vector&lt; T &gt; &amp;other)'],['../class_xu_s_t_l_1_1_vector.html#a537f1ec46319b0eb229ff214c70369cc',1,'XuSTL::Vector::Vector(Vector&lt; T &gt; &amp;&amp;other)'],['../class_xu_s_t_l_1_1_vector.html#a1b17cd439da65607939837fe66476355',1,'XuSTL::Vector::Vector(const std::initializer_list&lt; T &gt; &amp;list)']]]
+];

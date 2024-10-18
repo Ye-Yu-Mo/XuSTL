@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>XuSTL: include/container/Vector.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">XuSTL<span id="projectnumber">&#160;beta 0.1</span>
+   </div>
+   <div id="projectbrief">Simulate the implementation of STL library</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_vector_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Vector.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_vector_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;../adapter/ReverseIterator.hpp&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;../adapter/ConstIterator.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;../adapter/ConstReverseIterator.hpp&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_xu_s_t_l.html">XuSTL</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html">   17</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">   20</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> = T *;                                          </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">   21</a></span>        <span class="keyword">using </span><a class="code hl_class" href="class_xu_s_t_l_1_1_const_iterator.html">const_iterator</a> = <a class="code hl_class" href="class_xu_s_t_l_1_1_const_iterator.html">ConstIterator&lt;iterator&gt;</a>;                </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">   22</a></span>        <span class="keyword">using </span><a class="code hl_class" href="class_xu_s_t_l_1_1_reverse_iterator.html">reverse_iterator</a> = <a class="code hl_class" href="class_xu_s_t_l_1_1_reverse_iterator.html">ReverseIterator&lt;iterator&gt;</a>;            </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">   23</a></span>        <span class="keyword">using </span><a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">const_reverse_iterator</a> = <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">ConstReverseIterator&lt;iterator&gt;</a>; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="comment">// 迭代器相关</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">   29</a></span>        <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">begin</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">   34</a></span>        <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">end</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a6713805895d7b4a6379155c226f453a9">   39</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_iterator.html">const_iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a6713805895d7b4a6379155c226f453a9">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">const_iterator</a>(<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a6713805895d7b4a6379155c226f453a9">begin</a>()); }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a7a78f9730a582071295654bdef73d79d">   44</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_iterator.html">const_iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a7a78f9730a582071295654bdef73d79d">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">const_iterator</a>(<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a7a78f9730a582071295654bdef73d79d">end</a>()); }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a6336684a5a71ad2691ff7522961a4022">   49</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_reverse_iterator.html">reverse_iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a6336684a5a71ad2691ff7522961a4022">rbegin</a>() { <span class="keywordflow">return</span> <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">reverse_iterator</a>(<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">end</a>()); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#afc775bcd9d43dc9ed9a15a18c6287893">   54</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_reverse_iterator.html">reverse_iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#afc775bcd9d43dc9ed9a15a18c6287893">rend</a>() { <span class="keywordflow">return</span> <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">reverse_iterator</a>(<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">begin</a>()); }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#afb7fe26b2d65151dfb018710f5c11958">   59</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">const_reverse_iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#afb7fe26b2d65151dfb018710f5c11958">crbegin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">const_reverse_iterator</a>(<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">end</a>()); }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a00dbbc7a8cc64a7643734028a5e87a07">   64</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_const_reverse_iterator.html">const_reverse_iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a00dbbc7a8cc64a7643734028a5e87a07">crend</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">const_reverse_iterator</a>(<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">begin</a>()); }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">// 构造函数和析构函数</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db">   70</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db">Vector</a>() : <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>(nullptr), <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>(nullptr), <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a>(nullptr) { <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316">reserve</a>(10); }</div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a6012da5cc5657612550328c6dea636dc">   76</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a6012da5cc5657612550328c6dea636dc">Vector</a>(<span class="keywordtype">int</span> n, <span class="keyword">const</span> T &amp;value = T())</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            : <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>(new T[n]), <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>(<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + n), <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a>(<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + n)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>[i] = value;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">template</span> &lt;<span class="keyword">class</span> T_iterator&gt;</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a4d221adba992a429fb75ccf9f810692f">   89</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a4d221adba992a429fb75ccf9f810692f">Vector</a>(T_iterator first, T_iterator second)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordtype">size_t</span> n = std::distance(first, second); <span class="comment">// 计算范围大小</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> = <span class="keyword">new</span> T[n];</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + n;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a> = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + n;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            std::copy(first, second, <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#ab124e4b56bdf0a6b3ed5e1084de7244f">  101</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#ab124e4b56bdf0a6b3ed5e1084de7244f">Vector</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;other)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738">swap</a>(other);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a537f1ec46319b0eb229ff214c70369cc">  109</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a537f1ec46319b0eb229ff214c70369cc">Vector</a>(<a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;&amp;other) : <a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector</a>(other.<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">begin</a>(), other.<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">end</a>()) {}</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a1b17cd439da65607939837fe66476355">  114</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a1b17cd439da65607939837fe66476355">Vector</a>(<span class="keyword">const</span> std::initializer_list&lt;T&gt; &amp;list) : <a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector</a>(list.<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">begin</a>(), list.<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">end</a>()) {}</div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a369c5bfc5f20517d9a5bd86efa2c7e3e">  118</a></span>        <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a369c5bfc5f20517d9a5bd86efa2c7e3e">~Vector</a>()</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <span class="keyword">delete</span>[] <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="comment">// 重载</span></div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#acb22dcad00db50abb067d4edcc36b56a">  133</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acb22dcad00db50abb067d4edcc36b56a">operator=</a>(<a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> other)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738">swap</a>(other);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8">  143</a></span>        <a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8">operator=</a>(<a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;&amp;other)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;it : other)</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5">push_back</a>(it);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00154" data-start="{" data-end="}">
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a56929dfd23f5d36d39fd5186442f6f72">  154</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a56929dfd23f5d36d39fd5186442f6f72">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;other)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; other.<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">size</a>(); i++)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                <span class="keywordflow">if</span> (<span class="keyword">this</span>[i] != other[i])</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a187a9761764d97693839384ec4ee359b">  166</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a187a9761764d97693839384ec4ee359b">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;other) { <span class="keywordflow">return</span> !((*this) == other); }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="comment">// 容量操作</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">  172</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> - <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>); }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e">  177</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e">capacity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a> - <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>); }</div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316">  182</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316">reserve</a>(<span class="keywordtype">size_t</span> n)</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            <span class="keywordtype">size_t</span> sz = <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">size</a>();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <span class="keywordflow">if</span> (n &lt; <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e">capacity</a>())</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> new_start = <span class="keyword">new</span> T[n];</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            std::copy(<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>, <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>, new_start);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            <span class="keyword">delete</span>[] <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> = new_start;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + sz;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a> = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + n;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e">  199</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e">resize</a>(<span class="keywordtype">size_t</span> n, <span class="keyword">const</span> T &amp;value = T())</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="keywordtype">size_t</span> sz = <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">size</a>();</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="keywordtype">size_t</span> cp = <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e">capacity</a>();</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keywordflow">if</span> (n &lt; sz)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + n;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="keywordflow">if</span> (n &gt; cp)</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316">reserve</a>(n);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = sz; i &lt; n; i++)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>[i] = value;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + n;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
+</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#acc968af40ff4121bc6b50f3451a54da9">  217</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acc968af40ff4121bc6b50f3451a54da9">clear</a>() { <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>; }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#aba0273e12d9437f3028d6fa932387830">  222</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aba0273e12d9437f3028d6fa932387830">empty</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> == <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>; }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="comment">// 获取数据</span></div>
+<div class="foldopen" id="foldopen00225" data-start="{" data-end="}">
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a190825aa1a458ccc03b44befba55da60">  225</a></span>        T &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a190825aa1a458ccc03b44befba55da60">operator[]</a>(<span class="keywordtype">size_t</span> pos)</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keywordflow">if</span> (pos &gt;= <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">size</a>())</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;越界访问！&quot;</span>);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keywordflow">return</span> *(<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + pos);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        }</div>
+</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#af21a35d1500f2b99266250f1485c2ea2">  239</a></span>        <span class="keyword">const</span> T &amp;<a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#af21a35d1500f2b99266250f1485c2ea2">operator[]</a>(<span class="keywordtype">size_t</span> pos)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">this</span>[pos]; }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="comment">// 修改</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5">  246</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5">push_back</a>(<span class="keyword">const</span> T &amp;value) { <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd">insert</a>(<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>, value); }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a33ae0c2698265b9ccf8f0165f401601e">  250</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a33ae0c2698265b9ccf8f0165f401601e">pop_back</a>() { <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a83969da80538b9015725cfacd3e41747">erase</a>(<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> - 1); }</div>
+<div class="foldopen" id="foldopen00255" data-start="{" data-end="}">
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738">  255</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738">swap</a>(<a class="code hl_class" href="class_xu_s_t_l_1_1_vector.html">Vector&lt;T&gt;</a> &amp;v) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            std::swap(this-&gt;<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>, v._start);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            std::swap(this-&gt;<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>, v._finish);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            std::swap(this-&gt;<a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a>, v._end_of_storage);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00267" data-start="{" data-end="}">
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd">  267</a></span>        <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd">insert</a>(<a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> pos, <span class="keyword">const</span> T &amp;value)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keywordtype">size_t</span> offset = pos - <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="keywordtype">size_t</span> sz = <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">size</a>();</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordtype">size_t</span> cp = <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e">capacity</a>();</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            <span class="keywordflow">if</span> ((sz + 1) * 10 &gt;= cp * 8)</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316">reserve</a>(cp * 1.5);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            pos = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a> + offset;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>; it != pos; it--)</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                *it = std::move(*(it - 1));</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            *pos = value;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>++;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            <span class="keywordflow">return</span> pos;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00287" data-start="{" data-end="}">
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a83969da80538b9015725cfacd3e41747">  287</a></span>        <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="code hl_function" href="class_xu_s_t_l_1_1_vector.html#a83969da80538b9015725cfacd3e41747">erase</a>(<a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> pos)</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        {</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">if</span> (pos &lt; _start || pos &gt;= <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>)</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            {</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;越界移除！&quot;</span>);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            }</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = pos; it != <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a> - 1; it++)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                *it = std::move(*(it + 1));</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>--;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordflow">return</span> pos;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        }</div>
+</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="comment">// 其他</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">  301</a></span>        <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">_start</a>;          </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">  302</a></span>        <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">_finish</a>;         </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">  303</a></span>        <a class="code hl_typedef" href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">iterator</a> <a class="code hl_variable" href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">_end_of_storage</a>; </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    };</div>
+</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>}</div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_iterator_html"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_iterator.html">XuSTL::ConstIterator</a></div><div class="ttdoc">Const迭代器类</div><div class="ttdef"><b>Definition</b> ConstIterator.hpp:15</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_const_reverse_iterator_html"><div class="ttname"><a href="class_xu_s_t_l_1_1_const_reverse_iterator.html">XuSTL::ConstReverseIterator</a></div><div class="ttdoc">Const反向迭代器类</div><div class="ttdef"><b>Definition</b> ConstReverseIterator.hpp:16</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_reverse_iterator_html"><div class="ttname"><a href="class_xu_s_t_l_1_1_reverse_iterator.html">XuSTL::ReverseIterator</a></div><div class="ttdoc">反向迭代器类</div><div class="ttdef"><b>Definition</b> ReverseIterator.hpp:16</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html">XuSTL::Vector</a></div><div class="ttdoc">自定义 Vector 类，提供动态数组功能。</div><div class="ttdef"><b>Definition</b> Vector.hpp:18</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a00dbbc7a8cc64a7643734028a5e87a07"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a00dbbc7a8cc64a7643734028a5e87a07">XuSTL::Vector::crend</a></div><div class="ttdeci">const_reverse_iterator crend() const</div><div class="ttdoc">返回指向第一个元素之前的 const 反向迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:64</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a0ced4cc7c412a1d2e48a60bbefd467ef"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a0ced4cc7c412a1d2e48a60bbefd467ef">XuSTL::Vector::const_reverse_iterator</a></div><div class="ttdeci">ConstReverseIterator&lt; iterator &gt; const_reverse_iterator</div><div class="ttdoc">const 反向迭代器</div><div class="ttdef"><b>Definition</b> Vector.hpp:23</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a187a9761764d97693839384ec4ee359b"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a187a9761764d97693839384ec4ee359b">XuSTL::Vector::operator!=</a></div><div class="ttdeci">bool operator!=(const Vector&lt; T &gt; &amp;other)</div><div class="ttdoc">不相等比较运算符重载。</div><div class="ttdef"><b>Definition</b> Vector.hpp:166</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a190825aa1a458ccc03b44befba55da60"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a190825aa1a458ccc03b44befba55da60">XuSTL::Vector::operator[]</a></div><div class="ttdeci">T &amp; operator[](size_t pos)</div><div class="ttdef"><b>Definition</b> Vector.hpp:225</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a1b17cd439da65607939837fe66476355"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a1b17cd439da65607939837fe66476355">XuSTL::Vector::Vector</a></div><div class="ttdeci">Vector(const std::initializer_list&lt; T &gt; &amp;list)</div><div class="ttdoc">用初始化列表构造 Vector。</div><div class="ttdef"><b>Definition</b> Vector.hpp:114</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a1fe0a41a11bfd1ea84d5832a2d561738"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a1fe0a41a11bfd1ea84d5832a2d561738">XuSTL::Vector::swap</a></div><div class="ttdeci">void swap(Vector&lt; T &gt; &amp;v) noexcept</div><div class="ttdoc">交换当前 Vector 和另一个 Vector 的内容。</div><div class="ttdef"><b>Definition</b> Vector.hpp:255</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a2af3f512bc378a99e137ea8a13361316"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316">XuSTL::Vector::reserve</a></div><div class="ttdeci">void reserve(size_t n)</div><div class="ttdoc">预留容量。</div><div class="ttdef"><b>Definition</b> Vector.hpp:182</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a33ae0c2698265b9ccf8f0165f401601e"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a33ae0c2698265b9ccf8f0165f401601e">XuSTL::Vector::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdoc">移除末尾元素。</div><div class="ttdef"><b>Definition</b> Vector.hpp:250</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a369c5bfc5f20517d9a5bd86efa2c7e3e"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a369c5bfc5f20517d9a5bd86efa2c7e3e">XuSTL::Vector::~Vector</a></div><div class="ttdeci">~Vector()</div><div class="ttdoc">析构函数。</div><div class="ttdef"><b>Definition</b> Vector.hpp:118</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a3fd28d782a164715b5969f0d2b83f496"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a3fd28d782a164715b5969f0d2b83f496">XuSTL::Vector::reverse_iterator</a></div><div class="ttdeci">ReverseIterator&lt; iterator &gt; reverse_iterator</div><div class="ttdoc">反向迭代器</div><div class="ttdef"><b>Definition</b> Vector.hpp:22</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a437bdf7303a39d9918c862944b045514"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a437bdf7303a39d9918c862944b045514">XuSTL::Vector::_finish</a></div><div class="ttdeci">iterator _finish</div><div class="ttdoc">元素结束迭代器</div><div class="ttdef"><b>Definition</b> Vector.hpp:302</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a48de036a467670ad8fb4f743db67a5e8"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8">XuSTL::Vector::operator=</a></div><div class="ttdeci">Vector&lt; T &gt; &amp; operator=(Vector&lt; T &gt; &amp;&amp;other)</div><div class="ttdoc">移动赋值运算符重载。</div><div class="ttdef"><b>Definition</b> Vector.hpp:143</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a4d221adba992a429fb75ccf9f810692f"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a4d221adba992a429fb75ccf9f810692f">XuSTL::Vector::Vector</a></div><div class="ttdeci">Vector(T_iterator first, T_iterator second)</div><div class="ttdoc">用迭代器范围构造 Vector。</div><div class="ttdef"><b>Definition</b> Vector.hpp:89</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a4e3df218c69cd7f04774ddbd075f57db"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db">XuSTL::Vector::Vector</a></div><div class="ttdeci">Vector()</div><div class="ttdoc">默认构造函数，初始化容量为10。</div><div class="ttdef"><b>Definition</b> Vector.hpp:70</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a53433257dd4f2a6dced169e9393445ee"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a53433257dd4f2a6dced169e9393445ee">XuSTL::Vector::const_iterator</a></div><div class="ttdeci">ConstIterator&lt; iterator &gt; const_iterator</div><div class="ttdoc">const 迭代器</div><div class="ttdef"><b>Definition</b> Vector.hpp:21</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a537f1ec46319b0eb229ff214c70369cc"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a537f1ec46319b0eb229ff214c70369cc">XuSTL::Vector::Vector</a></div><div class="ttdeci">Vector(Vector&lt; T &gt; &amp;&amp;other)</div><div class="ttdoc">移动构造函数。</div><div class="ttdef"><b>Definition</b> Vector.hpp:109</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a56929dfd23f5d36d39fd5186442f6f72"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a56929dfd23f5d36d39fd5186442f6f72">XuSTL::Vector::operator==</a></div><div class="ttdeci">bool operator==(const Vector&lt; T &gt; &amp;other)</div><div class="ttdoc">相等比较运算符重载。</div><div class="ttdef"><b>Definition</b> Vector.hpp:154</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a6012da5cc5657612550328c6dea636dc"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a6012da5cc5657612550328c6dea636dc">XuSTL::Vector::Vector</a></div><div class="ttdeci">Vector(int n, const T &amp;value=T())</div><div class="ttdoc">用指定数量和默认值构造 Vector。</div><div class="ttdef"><b>Definition</b> Vector.hpp:76</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a62f3033a6535e2af99c3d4efa1e54d67"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a62f3033a6535e2af99c3d4efa1e54d67">XuSTL::Vector::_end_of_storage</a></div><div class="ttdeci">iterator _end_of_storage</div><div class="ttdoc">内存末尾迭代器</div><div class="ttdef"><b>Definition</b> Vector.hpp:303</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a6336684a5a71ad2691ff7522961a4022"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a6336684a5a71ad2691ff7522961a4022">XuSTL::Vector::rbegin</a></div><div class="ttdeci">reverse_iterator rbegin()</div><div class="ttdoc">返回指向最后一个元素的反向迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:49</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a6713805895d7b4a6379155c226f453a9"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a6713805895d7b4a6379155c226f453a9">XuSTL::Vector::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">返回指向第一个元素的 const 迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:39</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a7a1592a4dec4596f547f338d3e79394e"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e">XuSTL::Vector::capacity</a></div><div class="ttdeci">size_t capacity() const</div><div class="ttdoc">返回当前容量。</div><div class="ttdef"><b>Definition</b> Vector.hpp:177</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a7a78f9730a582071295654bdef73d79d"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a7a78f9730a582071295654bdef73d79d">XuSTL::Vector::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">返回指向最后一个元素之后的 const 迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:44</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a83969da80538b9015725cfacd3e41747"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a83969da80538b9015725cfacd3e41747">XuSTL::Vector::erase</a></div><div class="ttdeci">iterator erase(iterator pos)</div><div class="ttdoc">移除指定位置的元素。</div><div class="ttdef"><b>Definition</b> Vector.hpp:287</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a9148ca3893edd1ee0b8fa61929225f4a"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a9148ca3893edd1ee0b8fa61929225f4a">XuSTL::Vector::iterator</a></div><div class="ttdeci">T * iterator</div><div class="ttdoc">普通迭代器</div><div class="ttdef"><b>Definition</b> Vector.hpp:20</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_a925cbf3250caffb571d73d7005b6e9bd"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd">XuSTL::Vector::insert</a></div><div class="ttdeci">iterator insert(iterator pos, const T &amp;value)</div><div class="ttdoc">在指定位置插入新元素。</div><div class="ttdef"><b>Definition</b> Vector.hpp:267</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_aa5554d5e478f3a3217df38bbcaa589d5"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5">XuSTL::Vector::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div><div class="ttdoc">在末尾添加新元素。</div><div class="ttdef"><b>Definition</b> Vector.hpp:246</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_aa96a8447883c58d8ee6bb6354d12572a"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#aa96a8447883c58d8ee6bb6354d12572a">XuSTL::Vector::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">返回指向最后一个元素之后的迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:34</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_ab124e4b56bdf0a6b3ed5e1084de7244f"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#ab124e4b56bdf0a6b3ed5e1084de7244f">XuSTL::Vector::Vector</a></div><div class="ttdeci">Vector(const Vector&lt; T &gt; &amp;other)</div><div class="ttdoc">拷贝构造函数。</div><div class="ttdef"><b>Definition</b> Vector.hpp:101</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_aba0273e12d9437f3028d6fa932387830"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#aba0273e12d9437f3028d6fa932387830">XuSTL::Vector::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdoc">检查 Vector 是否为空。</div><div class="ttdef"><b>Definition</b> Vector.hpp:222</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_abd758b47fe606a317660ff56de32bd2e"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#abd758b47fe606a317660ff56de32bd2e">XuSTL::Vector::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">返回指向第一个元素的迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:29</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_acb22dcad00db50abb067d4edcc36b56a"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#acb22dcad00db50abb067d4edcc36b56a">XuSTL::Vector::operator=</a></div><div class="ttdeci">Vector&lt; T &gt; &amp; operator=(Vector&lt; T &gt; other)</div><div class="ttdoc">赋值运算符重载。</div><div class="ttdef"><b>Definition</b> Vector.hpp:133</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_acc968af40ff4121bc6b50f3451a54da9"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#acc968af40ff4121bc6b50f3451a54da9">XuSTL::Vector::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">清空 Vector，移除所有元素。</div><div class="ttdef"><b>Definition</b> Vector.hpp:217</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_acdc18767c37b6f4c6d4dc5aead2a1ab1"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1">XuSTL::Vector::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">返回当前元素数量。</div><div class="ttdef"><b>Definition</b> Vector.hpp:172</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_aef597063d04cd244c96c99b22a62308a"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#aef597063d04cd244c96c99b22a62308a">XuSTL::Vector::_start</a></div><div class="ttdeci">iterator _start</div><div class="ttdoc">元素开始迭代器</div><div class="ttdef"><b>Definition</b> Vector.hpp:301</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_af1338d9c895f6b0170d262029aa4f06e"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e">XuSTL::Vector::resize</a></div><div class="ttdeci">void resize(size_t n, const T &amp;value=T())</div><div class="ttdoc">调整大小，增加或减少元素数量。</div><div class="ttdef"><b>Definition</b> Vector.hpp:199</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_af21a35d1500f2b99266250f1485c2ea2"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#af21a35d1500f2b99266250f1485c2ea2">XuSTL::Vector::operator[]</a></div><div class="ttdeci">const T &amp; operator[](size_t pos) const</div><div class="ttdoc">返回指定位置的元素。</div><div class="ttdef"><b>Definition</b> Vector.hpp:239</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_afb7fe26b2d65151dfb018710f5c11958"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#afb7fe26b2d65151dfb018710f5c11958">XuSTL::Vector::crbegin</a></div><div class="ttdeci">const_reverse_iterator crbegin() const</div><div class="ttdoc">返回指向最后一个元素的 const 反向迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:59</div></div>
+<div class="ttc" id="aclass_xu_s_t_l_1_1_vector_html_afc775bcd9d43dc9ed9a15a18c6287893"><div class="ttname"><a href="class_xu_s_t_l_1_1_vector.html#afc775bcd9d43dc9ed9a15a18c6287893">XuSTL::Vector::rend</a></div><div class="ttdeci">reverse_iterator rend()</div><div class="ttdoc">返回指向第一个元素之前的反向迭代器。</div><div class="ttdef"><b>Definition</b> Vector.hpp:54</div></div>
+<div class="ttc" id="anamespace_xu_s_t_l_html"><div class="ttname"><a href="namespace_xu_s_t_l.html">XuSTL</a></div><div class="ttdef"><b>Definition</b> ConstIterator.hpp:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e0f5f6345e438c73b9ae78ec2940718c.html">container</a></li><li class="navelem"><a class="el" href="_vector_8hpp.html">Vector.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

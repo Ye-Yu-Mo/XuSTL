@@ -1,0 +1,15 @@
+<map id="XuSTL::Vector::operator=" name="XuSTL::Vector::operator=">
+<area shape="rect" id="Node000001" title="移动赋值运算符重载。" alt="" coords="5,29,191,55"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,29,427,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,39,225,39,225,45,191,45"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="475,29,631,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="427,39,461,39,461,45,427,45"/>
+<area shape="rect" id="Node000004" href="$class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="895,5,1069,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="604,27,678,14,783,9,881,10,881,15,783,14,679,19,605,32"/>
+<area shape="rect" id="Node000005" href="$class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="679,29,847,55"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="631,39,665,39,665,45,631,45"/>
+<area shape="rect" id="Node000006" href="$class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="909,55,1055,80"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="605,52,679,65,792,70,896,69,896,75,792,76,678,70,604,57"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="847,30,881,26,882,32,847,35"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="847,49,896,55,895,60,847,54"/>
+</map>

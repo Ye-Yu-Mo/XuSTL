@@ -74,5 +74,8 @@
         "variant": "cpp"
     },
     "files.autoSave": "onFocusChange",
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "cSpell.words": [
+        "tparam"
+    ]
 }

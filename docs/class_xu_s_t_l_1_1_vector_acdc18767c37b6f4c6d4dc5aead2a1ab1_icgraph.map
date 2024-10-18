@@ -1,0 +1,25 @@
+<map id="XuSTL::Vector::size" name="XuSTL::Vector::size">
+<area shape="rect" id="Node000001" title="返回当前元素数量。" alt="" coords="927,183,1072,208"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#a925cbf3250caffb571d73d7005b6e9bd" title="在指定位置插入新元素。" alt="" coords="477,56,633,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="975,174,933,136,906,118,878,103,816,84,751,73,689,68,633,67,633,62,689,62,752,67,817,79,880,98,909,113,936,132,979,170"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a63883bea2797d1333f5fabaaca26d096" title=" " alt="" coords="54,56,142,81"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="959,179,921,162,878,149,812,136,724,123,511,101,142,74,143,69,511,96,724,118,813,130,879,143,923,157,962,174"/>
+<area shape="rect" id="Node000006" href="$class_xu_s_t_l_1_1_vector.html#a56929dfd23f5d36d39fd5186442f6f72" title="相等比较运算符重载。" alt="" coords="683,259,879,284"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="952,216,880,242,822,261,821,256,878,237,950,211"/>
+<area shape="rect" id="Node000007" href="$class_xu_s_t_l_1_1_vector.html#a190825aa1a458ccc03b44befba55da60" title=" " alt="" coords="689,308,873,333"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="979,220,936,261,909,281,880,299,852,310,850,305,877,294,906,277,933,257,975,216"/>
+<area shape="rect" id="Node000008" href="$class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="697,157,865,183"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="912,188,865,182,865,177,913,183"/>
+<area shape="rect" id="Node000009" href="$class_xu_s_t_l_1_1_vector.html#af1338d9c895f6b0170d262029aa4f06e" title="调整大小，增加或减少元素数量。" alt="" coords="475,207,634,232"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="913,203,634,218,634,212,913,197"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#aa5554d5e478f3a3217df38bbcaa589d5" title="在末尾添加新元素。" alt="" coords="239,5,427,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="484,55,388,33,390,28,485,50"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="463,71,142,71,142,66,463,66"/>
+<area shape="rect" id="Node000004" href="$class_xu_s_t_l_1_1_vector.html#a48de036a467670ad8fb4f743db67a5e8" title="移动赋值运算符重载。" alt="" coords="5,5,191,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,21,191,21,191,15,225,15"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="260,36,143,62,142,57,259,31"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="737,154,583,84,585,79,740,149"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="709,188,614,209,613,204,708,183"/>
+<area shape="rect" id="Node000010" href="$class_xu_s_t_l_1_1_vector.html#a4e3df218c69cd7f04774ddbd075f57db" title="默认构造函数，初始化容量为10。" alt="" coords="475,157,635,183"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="683,173,635,173,635,167,683,167"/>
+</map>

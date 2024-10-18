@@ -1,0 +1,11 @@
+<map id="XuSTL::Vector::insert" name="XuSTL::Vector::insert">
+<area shape="rect" id="Node000001" title="在指定位置插入新元素。" alt="" coords="5,29,161,55"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="425,5,600,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,27,209,14,314,9,412,10,412,15,314,14,210,19,136,32"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="209,29,377,55"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,39,196,39,196,45,162,45"/>
+<area shape="rect" id="Node000004" href="$class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="440,55,585,80"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="136,52,210,65,323,70,426,69,426,75,322,76,209,70,135,57"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="378,30,412,26,412,32,378,35"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="378,49,426,55,426,60,378,54"/>
+</map>

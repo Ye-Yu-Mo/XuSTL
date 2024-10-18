@@ -1,0 +1,9 @@
+<map id="XuSTL::Vector::Vector" name="XuSTL::Vector::Vector">
+<area shape="rect" id="Node000001" title="默认构造函数，初始化容量为10。" alt="" coords="5,31,165,56"/>
+<area shape="rect" id="Node000002" href="$class_xu_s_t_l_1_1_vector.html#a2af3f512bc378a99e137ea8a13361316" title="预留容量。" alt="" coords="213,31,381,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,41,200,41,200,46,166,46"/>
+<area shape="rect" id="Node000003" href="$class_xu_s_t_l_1_1_vector.html#a7a1592a4dec4596f547f338d3e79394e" title="返回当前容量。" alt="" coords="429,5,604,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,31,416,27,416,32,382,36"/>
+<area shape="rect" id="Node000004" href="$class_xu_s_t_l_1_1_vector.html#acdc18767c37b6f4c6d4dc5aead2a1ab1" title="返回当前元素数量。" alt="" coords="444,55,589,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="382,50,430,55,430,61,382,55"/>
+</map>
