@@ -246,12 +246,12 @@ namespace XuSTL
          * @brief 获取链表的大小
          * @return 链表中元素的数量
          */
-        size_t size() { return _size; }
+        size_t size() const { return _size; }
         /**
          * @brief 检查链表是否为空
          * @return 如果链表为空返回 true，否则返回 false
          */
-        bool empty() { return _size == 0; }
+        bool empty() const { return _size == 0; }
         /**
          * @brief 清空链表
          */

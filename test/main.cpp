@@ -1,5 +1,8 @@
 #include "Vector.hpp"
 #include "List.hpp"
+#include "Stack.hpp"
+#include "Queue.hpp"
+#include "HashTable.hpp"
 using namespace XuSTL;
 void testVector()
 {
@@ -119,9 +122,113 @@ void testList()
     std::cout << "Size after clear: " << list.size() << std::endl; // 应该输出 0
 }
 
+void testStack()
+{
+    XuSTL::Stack<int, XuSTL::List<int>> intStack;
+
+    // 测试栈是否为空
+    std::cout << "栈是否为空？: " << (intStack.empty() ? "是" : "否") << std::endl;
+
+    // 向栈中推入元素
+    intStack.push(10);
+    intStack.push(20);
+    intStack.push(30);
+
+    std::cout << "推入元素后，栈大小: " << intStack.size() << std::endl;
+
+    // 查看栈顶元素
+    std::cout << "栈顶元素: " << intStack.top() << std::endl;
+
+    // 弹出元素
+    intStack.pop();
+    std::cout << "弹出一个元素后，栈顶元素: " << intStack.top() << std::endl;
+
+    // 再次弹出一个元素
+    intStack.pop();
+    std::cout << "再次弹出一个元素后，栈大小: " << intStack.size() << std::endl;
+
+    // 弹出最后一个元素
+    intStack.pop();
+    std::cout << "弹出所有元素后，栈是否为空？: " << (intStack.empty() ? "是" : "否") << std::endl;
+}
+
+void testQueue()
+{
+    XuSTL::Queue<int> intQueue;
+
+    try
+    {
+        std::cout << "队列是否为空？: " << (intQueue.empty() ? "是" : "否") << std::endl;
+
+        // 入队操作
+        intQueue.push(10);
+        intQueue.push(20);
+        intQueue.push(30);
+        std::cout << "入队元素后，队列大小: " << intQueue.size() << std::endl;
+
+        // 查看队头元素
+        std::cout << "队头元素: " << intQueue.front() << std::endl;
+
+        // 出队操作
+        intQueue.pop();
+        std::cout << "出队一个元素后，队头元素: " << intQueue.front() << std::endl;
+
+        intQueue.pop();
+        std::cout << "再次出队一个元素后，队列大小: " << intQueue.size() << std::endl;
+
+        // 再次出队一个元素
+        intQueue.pop();
+        std::cout << "出队所有元素后，队列是否为空？: " << (intQueue.empty() ? "是" : "否") << std::endl;
+
+        // 测试出队空队列时的异常
+        intQueue.pop();
+    }
+    catch (const std::out_of_range &e)
+    {
+        std::cerr << "错误: " << e.what() << std::endl;
+    }
+}
+struct KeyOfVal
+{
+    int operator()(const std::pair<int, std::string> &pair) const
+    {
+        return pair.first; // 假设第一个元素为键
+    }
+};
+
+struct Hash
+{
+    size_t operator()(int key) const
+    {
+        return std::hash<int>()(key); // 使用标准库的哈希函数
+    }
+};
+void testHash()
+{
+
+    XuSTL::HashTable<int, std::pair<int, std::string>, KeyOfVal, Hash> hashTable;
+    hashTable.Insert({1, "one"});
+    hashTable.Insert({2, "two"});
+
+    if (hashTable.Find(1))
+    {
+        std::cout << "Key 1 found!" << std::endl;
+    }
+
+    hashTable.Erase(1);
+
+    if (!hashTable.Find(1))
+    {
+        std::cout << "Key 1 erased!" << std::endl;
+    }
+}
+
 int main()
 {
     // testVector();
-    testList();
+    // testList();
+    // testStack();
+    // testQueue();
+    testHash();
     return 0;
 }

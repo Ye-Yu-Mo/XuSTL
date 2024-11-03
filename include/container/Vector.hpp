@@ -219,7 +219,7 @@ namespace XuSTL
          * @brief 检查 Vector 是否为空。
          * @return 如果为空则返回 true，否则返回 false。
          */
-        bool empty() { return _start == _finish; }
+        bool empty() const { return _start == _finish; }
 
         // 获取数据
         T &operator[](size_t pos)
